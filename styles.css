@@ -1587,21 +1587,28 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .portal-feature { padding: 10px 12px; }
   .portal-feature__title { font-size: 11px; }
 
-  /* Coaches — hide laptop, show features as a clean 2-col grid */
+  /* Coaches — single column stack: head → laptop → tiles → cta */
   .portal-layout--coach {
     grid-template-columns: 1fr;
     grid-template-areas:
       "head"
+      "visual"
       "tabs"
       "cta";
-    row-gap: 24px;
+    row-gap: 20px;
   }
-  .portal-layout--coach .portal-layout__visual { display: none; }
+  .portal-layout--coach .portal-layout__visual {
+    display: block;
+    max-width: 100%;
+  }
+  .portal-layout--coach .portal-layout__visual .laptop-frame {
+    max-width: 100% !important;
+  }
   .portal-layout--coach .portal-features {
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 8px;
   }
-  .portal-layout--coach .portal-feature { padding: 14px 14px; }
+  .portal-layout--coach .portal-feature { padding: 12px; }
   .portal-layout--coach .portal-feature__desc { display: block; font-size: 11px; }
   .portal-layout--coach .portal-feature__title { font-size: 12px; }
   .hero__ctas { flex-direction: column; align-items: flex-start; }
