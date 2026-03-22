@@ -1587,13 +1587,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .portal-feature { padding: 10px 12px; }
   .portal-feature__title { font-size: 11px; }
 
-  /* Coaches — single column stack: head → laptop → tiles → cta */
+  /* Coaches — single column stack: head → tiles → laptop → cta */
   .portal-layout--coach {
     grid-template-columns: 1fr;
     grid-template-areas:
       "head"
-      "visual"
       "tabs"
+      "visual"
       "cta";
     row-gap: 20px;
   }
@@ -1607,8 +1607,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .portal-layout--coach .portal-features {
     grid-template-columns: 1fr 1fr;
     gap: 8px;
-    position: relative;
-    z-index: 2;
   }
   .portal-layout--coach .portal-feature { padding: 12px; }
   .portal-layout--coach .portal-feature__desc { display: block; font-size: 11px; }
