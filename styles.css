@@ -1567,6 +1567,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .footer__top { grid-template-columns: 1fr; gap: 32px; }
   .trust-strip__inner { gap: 0; flex-direction: row; }
   .trust-stat { padding: 0 20px; }
+  /* Clients — keep side-by-side (phone mockup scales fine) */
   .portal-layout {
     grid-template-columns: 46% 1fr;
     grid-template-areas:
@@ -1585,7 +1586,24 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .portal-layout__visual { align-self: start; }
   .portal-feature { padding: 10px 12px; }
   .portal-feature__title { font-size: 11px; }
-  .laptop-frame { max-width: 100% !important; }
+
+  /* Coaches — hide laptop, show features as a clean 2-col grid */
+  .portal-layout--coach {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "head"
+      "tabs"
+      "cta";
+    row-gap: 24px;
+  }
+  .portal-layout--coach .portal-layout__visual { display: none; }
+  .portal-layout--coach .portal-features {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .portal-layout--coach .portal-feature { padding: 14px 14px; }
+  .portal-layout--coach .portal-feature__desc { display: block; font-size: 11px; }
+  .portal-layout--coach .portal-feature__title { font-size: 12px; }
   .hero__ctas { flex-direction: column; align-items: flex-start; }
 }
 
