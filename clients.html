@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="terracotta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Clients — FitAfrica</title>
+  <meta name="description" content="FIT Africa is the all-in-one platform for coaches, clients, and fitness businesses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Inter:wght@400;500;600;700&family=Unbounded:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="themes.css" />
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="nav nav--solid" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <img src="logo.png" class="nav__logo-img" alt="FIT Africa" />
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="coaches.html">Coaches</a></li>
+      <li><a href="clients.html">Clients</a></li>
+      <li><a href="enterprise.html">Enterprise</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+    <div class="nav__ctas">
+      <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--outline-cream btn--sm">Try for Free</a>
+      <a href="mailto:hello@fitafrica.tech" class="btn btn--primary btn--sm">Book a Demo</a>
+    </div>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Navigation -->
+<nav class="nav__mobile" id="navMobile">
+  <a href="index.html">Home</a>
+  <a href="coaches.html">Coaches</a>
+  <a href="clients.html">Clients</a>
+  <a href="enterprise.html">Enterprise</a>
+  <a href="pricing.html">Pricing</a>
+  <div class="divider"></div>
+  <a href="mailto:hello@fitafrica.tech" class="btn btn--outline-cream">Book a Demo</a>
+  <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--primary" style="margin-top:8px">Try for Free</a>
+</nav>
+
+
+<!-- Page Tab Switcher -->
+<div class="page-tabs">
+  <div class="page-tabs__inner">
+    <a href="coaches.html" class="page-tab">For Coaches</a>
+    <a href="clients.html" class="page-tab active">For Clients</a>
+  </div>
+</div>
+
+
+<!-- ============ CLIENT PORTAL ============ -->
+<section class="section-pad bg-cream" id="clients">
+  <div class="container">
+    <div class="portal-layout portal-layout--reverse">
+
+      <!-- Phone Mockup (Interactive) -->
+      <div style="display:flex;justify-content:center;align-items:center;" class="reveal">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="phone-notch-bar">
+              <span class="phone-time">9:41</span>
+              <div class="phone-notch-pill"></div>
+              <div class="phone-icons">
+                <span class="phone-icon">●●●</span>
+                <span class="phone-icon">🔋</span>
+              </div>
+            </div>
+            <div class="phone-content">
+
+              <!-- Screen: Workout (default) -->
+              <div class="client-screen active" id="cscreen-workout">
+                <div class="phone-greeting">Good morning 👋</div>
+                <div class="phone-user">Nia Abara</div>
+                <div class="phone-card">
+                  <div class="phone-card-label">Today's Workout</div>
+                  <div class="phone-card-title">Upper Body — Push A</div>
+                  <div class="phone-progress-bar"><div class="phone-progress-fill" style="width:60%"></div></div>
+                  <div class="phone-progress-text">3 of 5 exercises complete</div>
+                </div>
+                <div class="phone-card">
+                  <div class="phone-card-label">Next Session</div>
+                  <div class="phone-session-row">
+                    <div class="phone-session-icon">📅</div>
+                    <div class="phone-session-info">
+                      <div class="phone-card-title">Thursday 9:00 AM</div>
+                      <div class="phone-card-label">with Coach Amara</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="phone-goal-row">
+                  <div class="phone-goal-item"><div class="phone-goal-num">3</div><div class="phone-goal-label">Sessions<br>this week</div></div>
+                  <div class="phone-goal-item"><div class="phone-goal-num" style="color:var(--forest)">7</div><div class="phone-goal-label">Day<br>streak 🔥</div></div>
+                </div>
+              </div>
+
+              <!-- Screen: Progress -->
+              <div class="client-screen" id="cscreen-progress">
+                <div class="phone-greeting" style="font-size:12px;font-weight:800">My Progress</div>
+                <div class="phone-user" style="font-size:11px;margin-bottom:8px">Week 7 of 12 — Fat Loss</div>
+                <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;margin-bottom:10px">
+                  <div style="background:rgba(45,106,79,.08);border-radius:8px;padding:7px;text-align:center"><div style="font-size:12px;font-weight:900;color:var(--forest);font-family:var(--font-heading)">-3.2</div><div style="font-size:7px;color:var(--gray-500);font-family:var(--font-heading)">kg lost</div></div>
+                  <div style="background:rgba(194,87,42,.08);border-radius:8px;padding:7px;text-align:center"><div style="font-size:12px;font-weight:900;color:var(--terracotta);font-family:var(--font-heading)">18</div><div style="font-size:7px;color:var(--gray-500);font-family:var(--font-heading)">sessions</div></div>
+                  <div style="background:rgba(212,161,42,.08);border-radius:8px;padding:7px;text-align:center"><div style="font-size:12px;font-weight:900;color:var(--gold-dark);font-family:var(--font-heading)">7🔥</div><div style="font-size:7px;color:var(--gray-500);font-family:var(--font-heading)">streak</div></div>
+                </div>
+                <div style="font-size:9px;font-weight:700;color:var(--navy);font-family:var(--font-heading);margin-bottom:6px">Weekly Progress</div>
+                <div style="display:flex;flex-direction:column;gap:5px">
+                  <div><div style="display:flex;justify-content:space-between;font-size:8px;font-family:var(--font-heading);margin-bottom:2px"><span style="color:var(--gray-600)">Workouts completed</span><span style="font-weight:700;color:var(--navy)">5/5</span></div><div style="height:5px;background:var(--gray-200);border-radius:3px"><div style="height:100%;width:100%;background:var(--forest);border-radius:3px"></div></div></div>
+                  <div><div style="display:flex;justify-content:space-between;font-size:8px;font-family:var(--font-heading);margin-bottom:2px"><span style="color:var(--gray-600)">Check-in submitted</span><span style="font-weight:700;color:var(--navy)">✓</span></div><div style="height:5px;background:var(--gray-200);border-radius:3px"><div style="height:100%;width:100%;background:var(--forest);border-radius:3px"></div></div></div>
+                  <div><div style="display:flex;justify-content:space-between;font-size:8px;font-family:var(--font-heading);margin-bottom:2px"><span style="color:var(--gray-600)">Nutrition tracked</span><span style="font-weight:700;color:var(--navy)">4/7 days</span></div><div style="height:5px;background:var(--gray-200);border-radius:3px"><div style="height:100%;width:57%;background:var(--gold);border-radius:3px"></div></div></div>
+                </div>
+              </div>
+
+              <!-- Screen: Forms -->
+              <div class="client-screen" id="cscreen-forms">
+                <div class="phone-greeting" style="font-size:12px;font-weight:800">Week 8 Check-In</div>
+                <div class="phone-user" style="font-size:10px;margin-bottom:10px;color:var(--gray-500)">Due Friday · 3 min to complete</div>
+                <div style="display:flex;flex-direction:column;gap:7px">
+                  <div style="background:white;border-radius:8px;padding:8px 10px;border:1px solid var(--gray-200)"><div style="font-size:8px;font-weight:700;color:var(--navy);font-family:var(--font-heading);margin-bottom:4px">Current weight (kg)</div><div style="height:22px;background:var(--gray-100);border-radius:5px;display:flex;align-items:center;padding:0 8px;font-size:9px;color:var(--gray-500);font-family:var(--font-heading)">Enter weight...</div></div>
+                  <div style="background:white;border-radius:8px;padding:8px 10px;border:1px solid var(--gray-200)"><div style="font-size:8px;font-weight:700;color:var(--navy);font-family:var(--font-heading);margin-bottom:4px">Energy levels this week</div><div style="display:flex;gap:4px"><div style="flex:1;height:20px;background:rgba(45,106,79,.1);border:1px solid var(--forest);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:7px;color:var(--forest);font-weight:700;font-family:var(--font-heading)">High</div><div style="flex:1;height:20px;background:var(--gray-100);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:7px;color:var(--gray-500);font-family:var(--font-heading)">Med</div><div style="flex:1;height:20px;background:var(--gray-100);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:7px;color:var(--gray-500);font-family:var(--font-heading)">Low</div></div></div>
+                  <div style="background:white;border-radius:8px;padding:8px 10px;border:1px solid var(--gray-200)"><div style="font-size:8px;font-weight:700;color:var(--navy);font-family:var(--font-heading);margin-bottom:4px">Notes for Coach Amara</div><div style="height:30px;background:var(--gray-100);border-radius:5px;padding:4px 8px;font-size:8px;color:var(--gray-400);font-family:var(--font-heading)">Anything to update your coach on...</div></div>
+                  <div style="background:var(--terracotta);border-radius:8px;padding:8px;text-align:center;font-size:9px;font-weight:700;color:white;cursor:pointer;font-family:var(--font-heading)">Submit Check-In →</div>
+                </div>
+              </div>
+
+              <!-- Screen: Bookings -->
+              <div class="client-screen" id="cscreen-bookings">
+                <div class="phone-greeting" style="font-size:12px;font-weight:800">Book a Session</div>
+                <div class="phone-user" style="font-size:10px;margin-bottom:10px;color:var(--gray-500)">Coach Amara · March 2026</div>
+                <div style="font-size:9px;font-weight:700;color:var(--navy);font-family:var(--font-heading);margin-bottom:6px">Available this week</div>
+                <div style="display:flex;flex-direction:column;gap:5px">
+                  <div style="background:white;border-radius:8px;padding:8px 10px;display:flex;align-items:center;gap:8px;border:1px solid var(--gray-200)"><div style="font-size:10px">📅</div><div style="flex:1"><div style="font-size:8px;font-weight:700;color:var(--navy);font-family:var(--font-heading)">Thursday 9:00 AM</div><div style="font-size:7px;color:var(--gray-500);font-family:var(--font-heading)">60 min · Online</div></div><div style="font-size:7px;background:var(--terracotta);color:white;padding:3px 8px;border-radius:10px;font-weight:700;font-family:var(--font-heading);cursor:pointer">Book</div></div>
+                  <div style="background:white;border-radius:8px;padding:8px 10px;display:flex;align-items:center;gap:8px;border:1px solid var(--gray-200)"><div style="font-size:10px">📅</div><div style="flex:1"><div style="font-size:8px;font-weight:700;color:var(--navy);font-family:var(--font-heading)">Friday 7:00 AM</div><div style="font-size:7px;color:var(--gray-500);font-family:var(--font-heading)">45 min · Online</div></div><div style="font-size:7px;background:var(--terracotta);color:white;padding:3px 8px;border-radius:10px;font-weight:700;font-family:var(--font-heading);cursor:pointer">Book</div></div>
+                  <div style="background:rgba(194,87,42,.05);border-radius:8px;padding:8px 10px;display:flex;align-items:center;gap:8px;border:1px dashed var(--terracotta)"><div style="font-size:10px">📅</div><div style="flex:1"><div style="font-size:8px;font-weight:700;color:var(--terracotta);font-family:var(--font-heading)">Saturday 10:00 AM</div><div style="font-size:7px;color:var(--gray-500);font-family:var(--font-heading)">60 min · In-person</div></div><div style="font-size:7px;color:var(--terracotta);font-weight:700;font-family:var(--font-heading);cursor:pointer">Book</div></div>
+                </div>
+              </div>
+
+              <!-- Screen: Messages -->
+              <div class="client-screen" id="cscreen-messages">
+                <div class="phone-greeting" style="font-size:12px;font-weight:800;margin-bottom:2px">Coach Amara</div>
+                <div class="phone-user" style="font-size:10px;margin-bottom:8px;color:var(--forest)">● Online now</div>
+                <div class="mini-msg" style="max-height:180px;overflow:hidden">
+                  <div class="mini-msg-row from-coach"><div class="app-client-avatar" style="background:var(--gold-dark);width:20px;height:20px;font-size:8px">CA</div><div class="mini-bubble coach">Great session today Nia. Your form on RDLs is really improving 💪</div></div>
+                  <div class="mini-msg-row from-client"><div class="mini-bubble client">Thank you! Felt strong today. Am I ready to increase weight?</div></div>
+                  <div class="mini-msg-row from-coach"><div class="app-client-avatar" style="background:var(--gold-dark);width:20px;height:20px;font-size:8px">CA</div><div class="mini-bubble coach">Yes! Go to 40kg next session. Submit your check-in by Friday 🙌</div></div>
+                </div>
+                <div style="display:flex;gap:5px;margin-top:6px"><div style="flex:1;height:24px;background:white;border:1px solid var(--gray-200);border-radius:12px;display:flex;align-items:center;padding:0 10px;font-size:8px;color:var(--gray-400);font-family:var(--font-heading)">Message Coach...</div><div style="width:24px;height:24px;background:var(--terracotta);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;cursor:pointer;flex-shrink:0">→</div></div>
+              </div>
+
+              <!-- Screen: Achievements -->
+              <div class="client-screen" id="cscreen-achievements">
+                <div class="phone-greeting" style="font-size:12px;font-weight:800">Achievements</div>
+                <div class="phone-user" style="font-size:10px;margin-bottom:10px;color:var(--gray-500)">Nia Abara · 7 badges earned</div>
+                <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:10px">
+                  <div style="text-align:center;padding:6px 4px"><div style="font-size:20px;margin-bottom:3px">🔥</div><div style="font-size:7px;font-weight:700;color:var(--navy);font-family:var(--font-heading)">7-Day Streak</div></div>
+                  <div style="text-align:center;padding:6px 4px"><div style="font-size:20px;margin-bottom:3px">💪</div><div style="font-size:7px;font-weight:700;color:var(--navy);font-family:var(--font-heading)">First 10 Sessions</div></div>
+                  <div style="text-align:center;padding:6px 4px"><div style="font-size:20px;margin-bottom:3px">⚖️</div><div style="font-size:7px;font-weight:700;color:var(--navy);font-family:var(--font-heading)">-2kg Milestone</div></div>
+                  <div style="text-align:center;padding:6px 4px"><div style="font-size:20px;margin-bottom:3px">📝</div><div style="font-size:7px;font-weight:700;color:var(--navy);font-family:var(--font-heading)">Check-In Hero</div></div>
+                  <div style="text-align:center;padding:6px 4px;opacity:0.3"><div style="font-size:20px;margin-bottom:3px;filter:grayscale(1)">🏆</div><div style="font-size:7px;font-weight:700;color:var(--gray-400);font-family:var(--font-heading)">Programme Complete</div></div>
+                  <div style="text-align:center;padding:6px 4px;opacity:0.3"><div style="font-size:20px;margin-bottom:3px;filter:grayscale(1)">🌍</div><div style="font-size:7px;font-weight:700;color:var(--gray-400);font-family:var(--font-heading)">-5kg Milestone</div></div>
+                </div>
+                <div style="background:rgba(212,161,42,.1);border-radius:8px;padding:7px 10px;display:flex;align-items:center;gap:7px"><div style="font-size:14px">🎯</div><div><div style="font-size:8px;font-weight:700;color:var(--navy);font-family:var(--font-heading)">Next: Programme Complete</div><div style="font-size:7px;color:var(--gray-500);font-family:var(--font-heading)">5 weeks to go. Keep going!</div></div></div>
+              </div>
+
+            </div>
+            <div class="phone-nav-bar">
+              <div class="phone-nav-icon active" data-client-nav="workout">🏠</div>
+              <div class="phone-nav-icon" data-client-nav="progress">💪</div>
+              <div class="phone-nav-icon" data-client-nav="bookings">📅</div>
+              <div class="phone-nav-icon" data-client-nav="messages">💬</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copy -->
+      <div>
+        <div class="section-label section-label--terracotta reveal">Client Portal</div>
+        <h2 class="heading-xl reveal reveal-delay-1" style="color:var(--navy);margin-bottom:16px">
+          A premium fitness experience your clients will never want to leave.
+        </h2>
+        <p class="body-lg text-muted reveal reveal-delay-2" style="margin-bottom:8px">
+          Your clients deserve more than a PDF and a WhatsApp message. When they log into
+          Fit Africa, they get a polished, guided experience that keeps them motivated,
+          consistent, and connected to their coach every day.
+        </p>
+        <p class="body-lg text-muted reveal reveal-delay-2" style="margin-bottom:36px">
+          Higher engagement means fewer drop-offs, stronger results, and a business that
+          grows on word-of-mouth.
+        </p>
+
+        <div class="portal-features reveal reveal-delay-3" id="clientTabs">
+          <div class="portal-feature portal-feature--light active" data-client-tab="workout">
+            <div class="portal-feature__icon">🏋️</div>
+            <div class="portal-feature__title">Personalised Workouts</div>
+            <div class="portal-feature__desc">Coach-assigned plans with video demos, sets, reps, and guidance.</div>
+          </div>
+          <div class="portal-feature portal-feature--light" data-client-tab="progress">
+            <div class="portal-feature__icon">📈</div>
+            <div class="portal-feature__title">Progress Tracking</div>
+            <div class="portal-feature__desc">Log measurements, photos, and training data. See your transformation.</div>
+          </div>
+          <div class="portal-feature portal-feature--light" data-client-tab="forms">
+            <div class="portal-feature__icon">📝</div>
+            <div class="portal-feature__title">Digital Forms</div>
+            <div class="portal-feature__desc">Complete intake forms, consent waivers, and progress check-ins — all inside the app.</div>
+          </div>
+          <div class="portal-feature portal-feature--light" data-client-tab="bookings">
+            <div class="portal-feature__icon">📅</div>
+            <div class="portal-feature__title">Session Booking</div>
+            <div class="portal-feature__desc">Browse your coach's availability and book in seconds — no WhatsApp needed.</div>
+          </div>
+          <div class="portal-feature portal-feature--light" data-client-tab="messages">
+            <div class="portal-feature__icon">💬</div>
+            <div class="portal-feature__title">Coach Messaging</div>
+            <div class="portal-feature__desc">Direct, structured communication with your coach inside the app.</div>
+          </div>
+          <div class="portal-feature portal-feature--light" data-client-tab="achievements">
+            <div class="portal-feature__icon">🏆</div>
+            <div class="portal-feature__title">Achievements & Streaks</div>
+            <div class="portal-feature__desc">Milestone badges, streaks, and celebration moments that build habits.</div>
+          </div>
+        </div>
+
+        <div style="margin-top:36px" class="reveal reveal-delay-4">
+          <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--primary btn--lg">Create a Free Account Now →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ MINI CTA ============ -->
+<section class="cta-mini" id="cta">
+  <div class="container">
+    <p class="cta-mini__text">Join thousands of clients already training smarter.</p>
+    <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--primary btn--lg">Create a Free Account →</a>
+  </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <!-- Brand -->
+      <div>
+        <div class="footer__brand-logo">
+          <img src="logo.png" class="footer__brand-img" alt="FIT Africa" />
+        </div>
+        <p class="footer__tagline">
+          The operating system for modern fitness.<br />
+          Born in Lagos. Built for the world.
+        </p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram">📸</a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn">💼</a>
+          <a href="#" class="footer__social-link" aria-label="Twitter/X">𝕏</a>
+          <a href="#" class="footer__social-link" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+
+      <!-- Platform -->
+      <div>
+        <div class="footer__col-title">Platform</div>
+        <ul class="footer__links">
+          <li><a href="coaches.html">For Coaches</a></li>
+          <li><a href="clients.html">For Clients</a></li>
+          <li><a href="enterprise.html">Enterprise</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="index.html#showcase">Inside the App</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <div class="footer__col-title">Company</div>
+        <ul class="footer__links">
+          <li><a href="index.html#about">About Fit Africa</a></li>
+          <li><a href="#">FIT Africa International</a></li>
+          <li><a href="#">Safari Fitness Programmes</a></li>
+          <li><a href="#">Partnerships</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+
+      <!-- Get Started -->
+      <div>
+        <div class="footer__col-title">Get Started</div>
+        <ul class="footer__links">
+          <li><a href="#cta">Book a Demo</a></li>
+          <li><a href="#cta">Join the Waitlist</a></li>
+          <li><a href="mailto:hello@fitafrica.tech">Contact Us</a></li>
+          <li><a href="#">Coach Directory</a></li>
+          <li><a href="#">Find a Trainer</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">
+        © 2026 FIT Africa Technologies Ltd. All rights reserved.
+      </div>
+      <div class="footer__domain">
+        <strong>FitAfrica.tech</strong>
+      </div>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING THEME SWITCHER ============ -->
+<div class="theme-switcher" id="themeSwitcher">
+  <div class="theme-panel" id="themePanel">
+    <div class="theme-panel__title">African Themes</div>
+    <button class="theme-btn active" data-theme-val="terracotta">
+      <div class="theme-btn__swatch swatch--terracotta"></div>
+      <div class="theme-btn__text">
+        <span class="theme-btn__label">Terracotta</span>
+        <span class="theme-btn__sub">Pan-African warmth</span>
+      </div>
+      <span class="check">✓</span>
+    </button>
+    <button class="theme-btn" data-theme-val="kente-gold">
+      <div class="theme-btn__swatch swatch--kente-gold"></div>
+      <div class="theme-btn__text">
+        <span class="theme-btn__label">Kente Gold</span>
+        <span class="theme-btn__sub">Ashanti royalty</span>
+      </div>
+      <span class="check">✓</span>
+    </button>
+    <button class="theme-btn" data-theme-val="savanna">
+      <div class="theme-btn__swatch swatch--savanna"></div>
+      <div class="theme-btn__text">
+        <span class="theme-btn__label">Savanna</span>
+        <span class="theme-btn__sub">Forest energy</span>
+      </div>
+      <span class="check">✓</span>
+    </button>
+    <button class="theme-btn" data-theme-val="lagos">
+      <div class="theme-btn__swatch swatch--lagos"></div>
+      <div class="theme-btn__text">
+        <span class="theme-btn__label">Lagos Sunrise</span>
+        <span class="theme-btn__sub">Vibrant city fire</span>
+      </div>
+      <span class="check">✓</span>
+    </button>
+  </div>
+  <div class="theme-switcher__toggle" id="themeToggle" title="Switch theme">🎨</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

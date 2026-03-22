@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="terracotta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitAfrica — The Operating System for Modern Fitness</title>
+  <meta name="description" content="FIT Africa is the all-in-one platform for coaches, clients, and fitness businesses. Manage coaching, bookings, workouts, nutrition, progress, and payments — in one place. Born in Lagos. Built for the world." />
+  <meta name="keywords" content="fitness coaching platform, coach management software, client fitness portal, gym business software, online coaching app, workout tracking, Africa fitness, PT coaching app" />
+  <meta property="og:title" content="FitAfrica — The Operating System for Modern Fitness" />
+  <meta property="og:description" content="The all-in-one platform powering coaching, client progress, and fitness business growth." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Inter:wght@400;500;600;700&family=Unbounded:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="themes.css" />
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <img src="logo.png" class="nav__logo-img" alt="FIT Africa" />
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="coaches.html">Coaches</a></li>
+      <li><a href="clients.html">Clients</a></li>
+      <li><a href="enterprise.html">Enterprise</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+    <div class="nav__ctas">
+      <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--outline-cream btn--sm">Try for Free</a>
+      <a href="mailto:hello@fitafrica.tech" class="btn btn--primary btn--sm">Book a Demo</a>
+    </div>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Navigation -->
+<nav class="nav__mobile" id="navMobile">
+  <a href="index.html">Home</a>
+  <a href="coaches.html">Coaches</a>
+  <a href="clients.html">Clients</a>
+  <a href="enterprise.html">Enterprise</a>
+  <a href="pricing.html">Pricing</a>
+  <div class="divider"></div>
+  <a href="mailto:hello@fitafrica.tech" class="btn btn--outline-cream">Book a Demo</a>
+  <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--primary" style="margin-top:8px">Try for Free</a>
+</nav>
+
+
+<!-- ============ HERO ============ -->
+<section class="hero kente-texture" id="hero">
+  <div class="hero__bg-pattern"></div>
+  <div class="hero__kente"></div>
+  <!-- Logo watermark — large decorative background -->
+  <img src="logo.png" class="hero__logo-watermark" alt="" aria-hidden="true" />
+  <!-- Africa continent silhouette — decorative background shape -->
+  <svg class="africa-shape africa-shape--hero" viewBox="0 0 220 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M 108 8 C 122 6 140 11 155 22 L 168 36 L 175 54 L 178 72 L 174 88 L 165 96 C 174 110 178 126 176 142 L 172 159 L 164 174 L 152 185 L 136 193 L 118 198 L 100 198 L 83 192 L 67 180 L 52 164 L 40 146 L 32 126 L 30 106 L 36 90 L 26 74 L 22 55 L 28 38 L 40 23 L 57 12 L 77 7 Z"/>
+  </svg>
+
+  <div class="container">
+    <div class="hero__inner">
+
+      <!-- Left: Copy -->
+      <div class="hero__content">
+        <div class="hero__eyebrow reveal">
+          <div class="hero__eyebrow-dot"></div>
+          <span>Born in Lagos &middot; Built for the World</span>
+        </div>
+
+        <h1 class="display-xl hero__headline reveal reveal-delay-1">
+          The <em>operating system</em> for modern fitness.
+        </h1>
+
+        <p class="hero__sub reveal reveal-delay-2">
+          Coaches deliver better programmes. Clients stay accountable and engaged.
+          Fitness businesses run smoother at scale. Fit Africa connects every layer
+          of the fitness experience in one intelligent platform.
+        </p>
+
+        <div class="hero__ctas reveal reveal-delay-3">
+          <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--primary btn--lg">
+            Try for Free
+          </a>
+          <a href="pricing.html" class="btn btn--outline-cream btn--lg">
+            See Pricing
+          </a>
+        </div>
+
+        <div class="hero__trust reveal reveal-delay-4">
+          <div class="hero__trust-item">
+            <div>
+              <div class="hero__trust-num">100K<span style="font-size:14px;color:var(--terracotta-light)">+</span></div>
+              <div class="hero__trust-label">Coaches<br>in our network</div>
+            </div>
+          </div>
+          <div class="hero__trust-divider"></div>
+          <div class="hero__trust-item">
+            <div>
+              <div class="hero__trust-num">63</div>
+              <div class="hero__trust-label">Countries<br>represented</div>
+            </div>
+          </div>
+          <div class="hero__trust-divider"></div>
+          <div class="hero__trust-item">
+            <div>
+              <div class="hero__trust-num">4</div>
+              <div class="hero__trust-label">Trademarked<br>programmes</div>
+            </div>
+          </div>
+          <div class="hero__trust-divider"></div>
+          <div class="hero__trust-item">
+            <div>
+              <div class="hero__trust-num">1</div>
+              <div class="hero__trust-label">Unified<br>platform</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Dashboard Mockup -->
+      <div class="hero__visual reveal reveal-delay-2">
+        <div>
+          <div class="laptop-frame">
+            <!-- Camera bump -->
+            <div class="laptop-screen">
+              <!-- Title bar -->
+              <div class="app-titlebar">
+                <div class="app-titlebar-dot red"></div>
+                <div class="app-titlebar-dot yellow"></div>
+                <div class="app-titlebar-dot green"></div>
+                <div class="app-titlebar-logo">FIT Coach Pro — Coach Dashboard</div>
+              </div>
+              <!-- App layout -->
+              <div class="app-layout">
+                <!-- Sidebar -->
+                <aside class="app-sidebar">
+                  <div class="app-sidebar-brand">FitAfrica</div>
+                  <div class="app-nav-item active">
+                    <span class="app-nav-icon">⊞</span> Dashboard
+                  </div>
+                  <div class="app-nav-item">
+                    <span class="app-nav-icon">👥</span> Clients
+                  </div>
+                  <div class="app-nav-item">
+                    <span class="app-nav-icon">💪</span> Workouts
+                  </div>
+                  <div class="app-nav-item">
+                    <span class="app-nav-icon">📋</span> Forms
+                  </div>
+                  <div class="app-nav-item">
+                    <span class="app-nav-icon">📅</span> Bookings
+                  </div>
+                  <div class="app-nav-item">
+                    <span class="app-nav-icon">📊</span> Revenue
+                  </div>
+                  <div class="app-nav-item">
+                    <span class="app-nav-icon">💬</span> Messages
+                  </div>
+                  <div class="app-nav-item">
+                    <span class="app-nav-icon">⚙️</span> Settings
+                  </div>
+                </aside>
+                <!-- Main -->
+                <main class="app-main">
+                  <div class="app-main-header">Good morning, Coach Amara ☀️</div>
+                  <div class="app-stats-row">
+                    <div class="app-stat-card">
+                      <div class="app-stat-num">24</div>
+                      <div class="app-stat-label">Active Clients</div>
+                    </div>
+                    <div class="app-stat-card">
+                      <div class="app-stat-num terracotta">8</div>
+                      <div class="app-stat-label">Sessions Today</div>
+                    </div>
+                    <div class="app-stat-card">
+                      <div class="app-stat-num gold">$4.2K</div>
+                      <div class="app-stat-label">This Month</div>
+                    </div>
+                    <div class="app-stat-card">
+                      <div class="app-stat-num forest">12</div>
+                      <div class="app-stat-label">Check-ins</div>
+                    </div>
+                  </div>
+                  <div class="app-section-title">Recent Client Activity</div>
+                  <div class="app-client-row">
+                    <div class="app-client-avatar" style="background:#2D6A4F">KO</div>
+                    <div class="app-client-info">
+                      <div class="app-client-name">Kwame Osei</div>
+                      <div class="app-client-detail">Leg Power Day — Week 4</div>
+                    </div>
+                    <div class="app-client-badge done">✓ Done</div>
+                  </div>
+                  <div class="app-client-row">
+                    <div class="app-client-avatar" style="background:#C2572A">NA</div>
+                    <div class="app-client-info">
+                      <div class="app-client-name">Nia Abara</div>
+                      <div class="app-client-detail">Check-in due — Day 28</div>
+                    </div>
+                    <div class="app-client-badge due">Due</div>
+                  </div>
+                  <div class="app-client-row">
+                    <div class="app-client-avatar" style="background:#D4A12A">DM</div>
+                    <div class="app-client-info">
+                      <div class="app-client-name">David Mensah</div>
+                      <div class="app-client-detail">New message received</div>
+                    </div>
+                    <div class="app-client-badge msg">1 new</div>
+                  </div>
+                  <div class="app-client-row">
+                    <div class="app-client-avatar" style="background:#1B2838">PS</div>
+                    <div class="app-client-info">
+                      <div class="app-client-name">Priya Singh</div>
+                      <div class="app-client-detail">Onboarded — Strength Plan</div>
+                    </div>
+                    <div class="app-client-badge new">New</div>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </div>
+          <div class="laptop-base"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust-strip section-pad--sm" id="trust">
+  <div class="container">
+    <div class="trust-strip__inner">
+      <div class="trust-stat reveal">
+        <div class="trust-stat__num" data-count="100">0</div>
+        <div class="trust-stat__label">Coaches in network</div>
+      </div>
+      <div class="trust-stat reveal reveal-delay-1">
+        <div class="trust-stat__num" data-count="63">0</div>
+        <div class="trust-stat__label">Countries active</div>
+      </div>
+      <div class="trust-stat reveal reveal-delay-2">
+        <div class="trust-stat__num" data-count="50">0</div>
+        <div class="trust-stat__label">Education partners</div>
+      </div>
+      <div class="trust-stat reveal reveal-delay-3">
+        <div class="trust-stat__num" data-count="4">0</div>
+        <div class="trust-stat__label">Trademarked programmes</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Kente Diamond Divider -->
+<div class="kente-divider" style="background:#FAF6F0">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="24" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <pattern id="kente1" x="0" y="0" width="96" height="24" patternUnits="userSpaceOnUse">
+        <polygon points="12,2 22,12 12,22 2,12" fill="#C2572A"/>
+        <polygon points="36,2 46,12 36,22 26,12" fill="#D35400"/>
+        <polygon points="60,2 70,12 60,22 50,12" fill="#D4A12A"/>
+        <polygon points="84,2 94,12 84,22 74,12" fill="#27AE60"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="24" fill="url(#kente1)"/>
+  </svg>
+</div>
+
+<!-- ============ WHAT IS FIT AFRICA ============ -->
+<section class="section-pad bg-cream" id="platform">
+  <div class="container">
+    <div class="container--md" style="text-align:center;margin-bottom:56px">
+      <div class="section-label section-label--terracotta reveal">The Platform</div>
+      <h2 class="heading-xl reveal reveal-delay-1" style="color:var(--navy);margin-bottom:16px">
+        One platform. Every dimension of fitness.
+      </h2>
+      <p class="body-lg text-muted reveal reveal-delay-2" style="max-width:680px;margin:0 auto">
+        Most coaches juggle five different apps, three spreadsheets, and a WhatsApp group chat.
+        Fit Africa replaces all of that. It's a connected ecosystem where coaches work smarter,
+        clients experience fitness differently, and businesses finally have the infrastructure to scale.
+      </p>
+    </div>
+
+    <div class="platform-grid">
+      <!-- Coach -->
+      <div class="platform-card platform-card--coach reveal">
+        <div class="platform-card__icon platform-card__icon--coach">🎯</div>
+        <h3 class="heading-md platform-card__title"><a href="coaches.html" style="color:inherit;text-decoration:none">For Coaches</a></h3>
+        <p class="platform-card__desc">
+          Build programmes. Manage clients. Track progress. Run your coaching
+          business with professional-grade tools that save you hours every week.
+        </p>
+        <ul class="platform-card__list">
+          <li class="platform-card__list-item platform-card--coach">Workout & nutrition plan builder</li>
+          <li class="platform-card__list-item platform-card--coach">Smart scheduling & booking management</li>
+          <li class="platform-card__list-item platform-card--coach">Client progress tracking & check-ins</li>
+          <li class="platform-card__list-item platform-card--coach">Revenue, billing, and business analytics</li>
+          <li class="platform-card__list-item platform-card--coach">Video library & programme delivery</li>
+        </ul>
+      </div>
+
+      <!-- Client -->
+      <div class="platform-card platform-card--client reveal reveal-delay-1">
+        <div class="platform-card__icon platform-card__icon--client">✨</div>
+        <h3 class="heading-md platform-card__title"><a href="clients.html" style="color:inherit;text-decoration:none">For Clients</a></h3>
+        <p class="platform-card__desc">
+          Receive personalised workouts, track progress, book sessions,
+          and stay connected to your coach in a premium, intuitive mobile experience.
+        </p>
+        <ul class="platform-card__list">
+          <li class="platform-card__list-item platform-card--client">Personalised workout & meal plans</li>
+          <li class="platform-card__list-item platform-card--client">Progress tracking & milestone rewards</li>
+          <li class="platform-card__list-item platform-card--client">Simple session booking & calendar</li>
+          <li class="platform-card__list-item platform-card--client">Direct messaging with your coach</li>
+          <li class="platform-card__list-item platform-card--client">A guided, structured fitness journey</li>
+        </ul>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="platform-card platform-card--enterprise reveal reveal-delay-2">
+        <div class="platform-card__icon platform-card__icon--enterprise">🏢</div>
+        <h3 class="heading-md platform-card__title"><a href="enterprise.html" style="color:inherit;text-decoration:none">For Businesses</a></h3>
+        <p class="platform-card__desc">
+          Manage teams of coaches, oversee hundreds of clients, and operate a
+          scalable fitness business from a centralised enterprise dashboard.
+        </p>
+        <ul class="platform-card__list">
+          <li class="platform-card__list-item platform-card--enterprise">Multi-coach team management</li>
+          <li class="platform-card__list-item platform-card--enterprise">Enterprise billing & subscription oversight</li>
+          <li class="platform-card__list-item platform-card--enterprise">Branded white-label capabilities</li>
+          <li class="platform-card__list-item platform-card--enterprise">Performance monitoring & reporting</li>
+          <li class="platform-card__list-item platform-card--enterprise">Scalable infrastructure, no complexity</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Kente Diamond Divider -->
+<div class="kente-divider" style="background:var(--navy-dark,#111822)">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="24">
+    <defs>
+      <pattern id="kente-brand-top" x="0" y="0" width="96" height="24" patternUnits="userSpaceOnUse">
+        <polygon points="12,2 22,12 12,22 2,12" fill="#27AE60"/>
+        <polygon points="36,2 46,12 36,22 26,12" fill="#D4A12A"/>
+        <polygon points="60,2 70,12 60,22 50,12" fill="#C2572A"/>
+        <polygon points="84,2 94,12 84,22 74,12" fill="#D35400"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="24" fill="url(#kente-brand-top)"/>
+  </svg>
+</div>
+
+<!-- ============ BRAND IDENTITY / LIVE AFRICAN THEMES ============ -->
+<section class="brand-section section-pad kente-texture" id="brand">
+  <div class="pan-african-stripe">
+    <div class="pan-stripe pan-red"></div>
+    <div class="pan-stripe pan-orange"></div>
+    <div class="pan-stripe pan-yellow"></div>
+    <div class="pan-stripe pan-green"></div>
+  </div>
+  <div class="container brand-section__inner" style="padding-top:0">
+    <div style="text-align:center;padding-top:64px;margin-bottom:56px">
+      <div class="section-label section-label--gold reveal">African Design System</div>
+      <h2 class="heading-xl text-white reveal reveal-delay-1" style="margin-bottom:16px">
+        Every colour tells a story.<br/>Every pattern has purpose.
+      </h2>
+      <p class="body-lg reveal reveal-delay-2" style="color:rgba(250,246,240,.6);max-width:640px;margin:0 auto">
+        Fit Africa's design system is rooted in African cultural heritage — from Kente gold to Pan-African
+        tradition to Adinkra symbolism. Coaches choose their brand identity inside the platform
+        and clients see a coaching space that feels like it belongs to them.
+        <strong style="color:rgba(250,246,240,.8)"> Try the live theme switcher below.</strong>
+      </p>
+    </div>
+    <div class="brand-grid">
+      <div>
+        <h3 class="heading-md text-white reveal" style="margin-bottom:6px">Choose an African identity.</h3>
+        <p class="reveal reveal-delay-1" style="color:rgba(250,246,240,.5);font-size:14px;margin-bottom:24px;line-height:1.6">
+          Click any theme — it applies across this entire page instantly. This is exactly how
+          coaches and fitness brands customise their portal inside Fit Africa.
+        </p>
+        <div class="theme-cards">
+          <div class="theme-card theme-card--terracotta active reveal" data-set-theme="terracotta" role="button" tabindex="0">
+            <div class="theme-card__name">🔥 Terracotta</div>
+            <div class="theme-card__desc">Pan-African fire. Warm earth energy.</div>
+            <div class="theme-card__palette">
+              <div class="theme-card__dot" style="background:#C2572A"></div>
+              <div class="theme-card__dot" style="background:#D4A12A"></div>
+              <div class="theme-card__dot" style="background:#2D6A4F"></div>
+              <div class="theme-card__dot" style="background:#1B2838"></div>
+            </div>
+          </div>
+          <div class="theme-card theme-card--kente-gold reveal reveal-delay-1" data-set-theme="kente-gold" role="button" tabindex="0">
+            <div class="theme-card__name">✨ Kente Gold</div>
+            <div class="theme-card__desc">Ashanti royalty. Deep navy authority.</div>
+            <div class="theme-card__palette">
+              <div class="theme-card__dot" style="background:#D4A12A"></div>
+              <div class="theme-card__dot" style="background:#B87333"></div>
+              <div class="theme-card__dot" style="background:#2D6A4F"></div>
+              <div class="theme-card__dot" style="background:#0D1B2A"></div>
+            </div>
+          </div>
+          <div class="theme-card theme-card--savanna reveal reveal-delay-2" data-set-theme="savanna" role="button" tabindex="0">
+            <div class="theme-card__name">🌿 Savanna</div>
+            <div class="theme-card__desc">Grounded in African land and growth.</div>
+            <div class="theme-card__palette">
+              <div class="theme-card__dot" style="background:#2D8A45"></div>
+              <div class="theme-card__dot" style="background:#D4A12A"></div>
+              <div class="theme-card__dot" style="background:#8B4513"></div>
+              <div class="theme-card__dot" style="background:#0F2B1A"></div>
+            </div>
+          </div>
+          <div class="theme-card theme-card--lagos reveal reveal-delay-3" data-set-theme="lagos" role="button" tabindex="0">
+            <div class="theme-card__name">🌅 Lagos Sunrise</div>
+            <div class="theme-card__desc">Vibrant city energy. Bold and unmissable.</div>
+            <div class="theme-card__palette">
+              <div class="theme-card__dot" style="background:#D93020"></div>
+              <div class="theme-card__dot" style="background:#F39C12"></div>
+              <div class="theme-card__dot" style="background:#2D6A4F"></div>
+              <div class="theme-card__dot" style="background:#1A0808"></div>
+            </div>
+          </div>
+        </div>
+        <div class="cultural-callouts reveal reveal-delay-2" style="margin-top:24px">
+          <div class="cultural-callout">
+            <div class="cultural-callout__icon">🪢</div>
+            <div class="cultural-callout__title">Kente Patterns</div>
+            <div class="cultural-callout__desc">Ghanaian textile motifs used as UI texture and dividers. Every diamond tells a story.</div>
+          </div>
+          <div class="cultural-callout">
+            <div class="cultural-callout__icon">🌍</div>
+            <div class="cultural-callout__title">Pan-African Palette</div>
+            <div class="cultural-callout__desc">Red, gold, and green — heritage colours rooted in strength, mineral wealth, and growth.</div>
+          </div>
+          <div class="cultural-callout">
+            <div class="cultural-callout__icon">◉</div>
+            <div class="cultural-callout__title">Adinkra Symbols</div>
+            <div class="cultural-callout__desc">Traditional Ghanaian symbols mapped to app functions — strength, endurance, leadership, journey.</div>
+          </div>
+          <div class="cultural-callout">
+            <div class="cultural-callout__icon">🎨</div>
+            <div class="cultural-callout__title">White-Label Ready</div>
+            <div class="cultural-callout__desc">Fitness brands pick their colours inside the platform. Clients see a space that feels entirely theirs.</div>
+          </div>
+        </div>
+      </div>
+      <div class="brand-preview-wrap reveal reveal-delay-2">
+        <div class="brand-preview-card">
+          <div class="brand-preview-card__label">Live Colour System — Changes With Theme</div>
+          <div class="btn-preview-row">
+            <button class="btn-preview btn-preview--primary">Book Session</button>
+            <button class="btn-preview btn-preview--secondary">View Plan</button>
+            <button class="btn-preview btn-preview--ghost">Learn More</button>
+          </div>
+          <div style="height:28px"></div>
+          <div class="swatch-row">
+            <div class="swatch-block swatch-primary" data-label="Primary"></div>
+            <div class="swatch-block swatch-gold" data-label="Accent"></div>
+            <div class="swatch-block swatch-dark" data-label="Dark"></div>
+            <div class="swatch-block swatch-accent" data-label="Forest"></div>
+            <div class="swatch-block swatch-bg" data-label="Surface"></div>
+          </div>
+          <div style="height:28px"></div>
+        </div>
+        <div class="brand-preview-card" style="padding:0;overflow:hidden">
+          <div class="brand-preview-card__label" style="padding:12px 16px 4px">Your branded coaching portal</div>
+          <div style="padding:0 14px 14px">
+            <div class="laptop-frame" style="max-width:100%;margin-top:8px">
+              <div class="laptop-screen">
+                <div class="app-titlebar">
+                  <div class="app-titlebar-dot red"></div>
+                  <div class="app-titlebar-dot yellow"></div>
+                  <div class="app-titlebar-dot green"></div>
+                  <div class="app-titlebar-logo">Your Fitness Brand — Dashboard</div>
+                </div>
+                <div class="app-layout">
+                  <aside class="app-sidebar">
+                    <div class="app-sidebar-brand" style="color:var(--gold)">YourBrand</div>
+                    <div class="app-nav-item active"><span class="app-nav-icon">⊞</span> Dashboard</div>
+                    <div class="app-nav-item"><span class="app-nav-icon">👥</span> Clients</div>
+                    <div class="app-nav-item"><span class="app-nav-icon">💪</span> Workouts</div>
+                    <div class="app-nav-item"><span class="app-nav-icon">📋</span> Forms</div>
+                    <div class="app-nav-item"><span class="app-nav-icon">📅</span> Bookings</div>
+                  </aside>
+                  <main class="app-main">
+                    <div class="app-main-header">Welcome — Your Coaching Brand</div>
+                    <div class="app-stats-row">
+                      <div class="app-stat-card"><div class="app-stat-num" style="color:var(--terracotta)">12</div><div class="app-stat-label">Active Clients</div></div>
+                      <div class="app-stat-card"><div class="app-stat-num" style="color:var(--gold-dark)">$2.1K</div><div class="app-stat-label">Revenue</div></div>
+                      <div class="app-stat-card"><div class="app-stat-num" style="color:var(--forest)">5</div><div class="app-stat-label">Sessions</div></div>
+                    </div>
+                    <div class="app-section-title">Your Clients</div>
+                    <div class="app-client-row">
+                      <div class="app-client-avatar" style="background:var(--terracotta)">AJ</div>
+                      <div class="app-client-info"><div class="app-client-name">Amara Johnson</div><div class="app-client-detail">Strength Plan — Week 3</div></div>
+                      <div class="app-client-badge done">Active</div>
+                    </div>
+                    <div class="app-client-row">
+                      <div class="app-client-avatar" style="background:var(--forest)">KM</div>
+                      <div class="app-client-info"><div class="app-client-name">Kofi Mensah</div><div class="app-client-detail">Check-in needed</div></div>
+                      <div class="app-client-badge due">Due</div>
+                    </div>
+                  </main>
+                </div>
+              </div>
+            </div>
+            <div class="laptop-base"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kente Diamond Divider -->
+<div class="kente-divider" style="background:var(--terracotta,#C2572A)">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="24">
+    <defs>
+      <pattern id="kente-brand-mid" x="0" y="0" width="96" height="24" patternUnits="userSpaceOnUse">
+        <polygon points="12,2 22,12 12,22 2,12" fill="rgba(255,255,255,0.3)"/>
+        <polygon points="36,2 46,12 36,22 26,12" fill="rgba(255,255,255,0.15)"/>
+        <polygon points="60,2 70,12 60,22 50,12" fill="rgba(255,255,255,0.3)"/>
+        <polygon points="84,2 94,12 84,22 74,12" fill="rgba(255,255,255,0.15)"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="24" fill="url(#kente-brand-mid)"/>
+  </svg>
+</div>
+
+<!-- ============ WHY FIT AFRICA ============ -->
+<section class="section-pad bg-navy" id="about">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <div class="section-label section-label--gold reveal">Why Fit Africa</div>
+        <h2 class="heading-xl text-white reveal reveal-delay-1" style="margin-bottom:16px">
+          Not just another app. A complete fitness operating system.
+        </h2>
+        <p class="body-lg reveal reveal-delay-2" style="color:rgba(250,246,240,.65);margin-bottom:32px">
+          Most coaches aren't failing because they lack talent. They're failing to scale because
+          they're using the wrong infrastructure. Fit Africa isn't an add-on — it replaces the
+          fragmented mess with one connected system.
+        </p>
+        <h3 class="heading-md reveal reveal-delay-2" style="color:rgba(250,246,240,.7);font-size:15px;margin-bottom:16px;text-transform:uppercase;letter-spacing:.05em">Without Fit Africa</h3>
+        <div class="comparison-list">
+          <div class="comparison-item comparison-item--bad reveal reveal-delay-2"><span class="ci-icon">✕</span><span>WhatsApp + Google Sheets + Calendly + PDF workouts + manual invoicing</span></div>
+          <div class="comparison-item comparison-item--bad reveal reveal-delay-3"><span class="ci-icon">✕</span><span>Hours wasted on admin that doesn't contribute to coaching quality</span></div>
+          <div class="comparison-item comparison-item--bad reveal reveal-delay-3"><span class="ci-icon">✕</span><span>Clients feel unsupported — they ghost, churn, or never buy again</span></div>
+          <div class="comparison-item comparison-item--bad reveal reveal-delay-4"><span class="ci-icon">✕</span><span>No business data — no idea which clients are at risk or what's working</span></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="heading-md reveal" style="color:var(--gold-light);font-size:15px;margin-bottom:16px;margin-top:88px;text-transform:uppercase;letter-spacing:.05em">With Fit Africa</h3>
+        <div class="diff-card reveal reveal-delay-1">
+          <div class="diff-card__title">One platform replaces five tools</div>
+          <div class="diff-card__desc">Booking, coaching, messaging, payments, and analytics — all in one login. No more tool-switching. No more data silos.</div>
+          <span class="diff-card__tag">Efficiency</span>
+        </div>
+        <div class="diff-card reveal reveal-delay-2">
+          <div class="diff-card__title">Coaching quality actually improves</div>
+          <div class="diff-card__desc">When admin is handled automatically, coaches give better attention to what matters — their clients' results and programme design.</div>
+          <span class="diff-card__tag">Quality</span>
+        </div>
+        <div class="diff-card reveal reveal-delay-3">
+          <div class="diff-card__title">Clients stay, refer, and come back</div>
+          <div class="diff-card__desc">A premium client experience creates loyalty. Guided journeys, achievement tracking, and daily touchpoints turn one-month clients into long-term ones.</div>
+          <span class="diff-card__tag">Retention</span>
+        </div>
+        <div class="diff-card reveal reveal-delay-4">
+          <div class="diff-card__title">Your business data works for you</div>
+          <div class="diff-card__desc">Know exactly who's at risk of churning, which programmes are working, and where your revenue is coming from — before small issues become big problems.</div>
+          <span class="diff-card__tag">Intelligence</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kente Diamond Divider -->
+<div class="kente-divider" style="background:var(--navy-dark,#111822)">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="24" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <pattern id="kente-why-out" x="0" y="0" width="96" height="24" patternUnits="userSpaceOnUse">
+        <polygon points="12,2 22,12 12,22 2,12" fill="none" stroke="rgba(212,161,42,0.35)" stroke-width="1.2"/>
+        <polygon points="12,6 18,12 12,18 6,12" fill="rgba(212,161,42,0.08)"/>
+        <polygon points="36,2 46,12 36,22 26,12" fill="none" stroke="rgba(194,87,42,0.3)" stroke-width="1.2"/>
+        <polygon points="60,2 70,12 60,22 50,12" fill="none" stroke="rgba(212,161,42,0.35)" stroke-width="1.2"/>
+        <polygon points="60,6 66,12 60,18 54,12" fill="rgba(212,161,42,0.08)"/>
+        <polygon points="84,2 94,12 84,22 74,12" fill="none" stroke="rgba(194,87,42,0.3)" stroke-width="1.2"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="24" fill="url(#kente-why-out)"/>
+  </svg>
+</div>
+
+<!-- ============ PROBLEM / SOLUTION ============ -->
+<section class="section-pad bg-white">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:56px">
+      <div class="section-label section-label--terracotta reveal">Why It Matters</div>
+      <h2 class="heading-xl reveal reveal-delay-1" style="color:var(--navy);margin-bottom:16px">
+        The fitness industry is running on duct tape.
+      </h2>
+      <p class="body-lg text-muted reveal reveal-delay-2" style="max-width:640px;margin:0 auto">
+        Most coaches are brilliant at fitness — and drowning in admin. Most clients are motivated —
+        and lost between apps. Fit Africa closes the gap.
+      </p>
+    </div>
+
+    <div class="problem-solution reveal">
+      <div class="problem-col">
+        <h3 class="ps-heading">❌ The way it works now</h3>
+        <p class="ps-sub">Fragmented, frustrating, unsustainable.</p>
+        <ul class="ps-list">
+          <li class="ps-item"><span class="ps-icon">📎</span> Workout plans shared as PDFs, Google Docs, or WhatsApp messages</li>
+          <li class="ps-item"><span class="ps-icon">📱</span> Client communication scattered across WhatsApp, email, and DMs</li>
+          <li class="ps-item"><span class="ps-icon">🗓️</span> Scheduling done manually with screenshots and back-and-forth messages</li>
+          <li class="ps-item"><span class="ps-icon">💸</span> Payments handled through bank transfers, cash, or disconnected tools</li>
+          <li class="ps-item"><span class="ps-icon">📊</span> No visibility into client progress, drop-off, or business performance</li>
+          <li class="ps-item"><span class="ps-icon">🔁</span> Coaches repeat the same admin work 20–30 times per client, per month</li>
+          <li class="ps-item"><span class="ps-icon">😩</span> Clients feel unsupported between sessions, lose consistency, and churn</li>
+        </ul>
+      </div>
+      <div class="solution-col">
+        <h3 class="ps-heading">✅ The Fit Africa way</h3>
+        <p class="ps-sub">Connected, professional, scalable.</p>
+        <ul class="ps-list">
+          <li class="ps-item"><span class="ps-icon">💪</span> Build and assign workouts in minutes — auto-delivered to clients</li>
+          <li class="ps-item"><span class="ps-icon">💬</span> All client communication in one structured inbox — no more message hunting</li>
+          <li class="ps-item"><span class="ps-icon">📅</span> Smart booking and availability management — clients self-book, you approve</li>
+          <li class="ps-item"><span class="ps-icon">💳</span> Subscriptions, packages, and invoices handled automatically</li>
+          <li class="ps-item"><span class="ps-icon">📈</span> Real-time progress tracking, check-in data, and business dashboards</li>
+          <li class="ps-item"><span class="ps-icon">⚡</span> Templates and automation eliminate repetitive admin work completely</li>
+          <li class="ps-item"><span class="ps-icon">🌟</span> Clients get a premium guided experience that builds loyalty and retention</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ WHO IT'S FOR ============ -->
+<section class="section-pad bg-white" id="audience">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:16px">
+      <div class="section-label section-label--terracotta reveal">Who It's For</div>
+      <h2 class="heading-xl reveal reveal-delay-1" style="color:var(--navy);margin-bottom:16px">
+        Built for every corner of the fitness world.
+      </h2>
+      <p class="body-lg text-muted reveal reveal-delay-2" style="max-width:600px;margin:0 auto">
+        From solo personal trainers to large fitness enterprises — Fit Africa is designed to
+        grow with you at every stage.
+      </p>
+    </div>
+
+    <div class="audience-grid">
+      <div class="audience-card reveal">
+        <div class="audience-card__emoji">🏋️</div>
+        <div class="audience-card__title">Personal Trainers</div>
+        <div class="audience-card__desc">Run your PT business professionally. Manage clients, plans, and payments in one place.</div>
+      </div>
+      <div class="audience-card reveal reveal-delay-1">
+        <div class="audience-card__emoji">💻</div>
+        <div class="audience-card__title">Online Coaches</div>
+        <div class="audience-card__desc">Scale your online coaching without adding admin. Serve more clients at a higher standard.</div>
+      </div>
+      <div class="audience-card reveal reveal-delay-2">
+        <div class="audience-card__emoji">🕺</div>
+        <div class="audience-card__title">Group Fitness Instructors</div>
+        <div class="audience-card__desc">Deliver Safari Dance, BodyTone, and group programmes with digital structure and client tracking.</div>
+      </div>
+      <div class="audience-card reveal reveal-delay-3">
+        <div class="audience-card__emoji">🏢</div>
+        <div class="audience-card__title">Gym Brands</div>
+        <div class="audience-card__desc">Give your gym a digital product. Extend your coaching beyond the studio walls.</div>
+      </div>
+      <div class="audience-card reveal reveal-delay-1">
+        <div class="audience-card__emoji">🌿</div>
+        <div class="audience-card__title">Wellness Businesses</div>
+        <div class="audience-card__desc">Nutrition consultants, physiotherapists, and wellness coaches benefit from the same infrastructure.</div>
+      </div>
+      <div class="audience-card reveal reveal-delay-2">
+        <div class="audience-card__emoji">🤝</div>
+        <div class="audience-card__title">Multi-Coach Teams</div>
+        <div class="audience-card__desc">Enterprise tools for coaching brands managing multiple coaches and large client volumes.</div>
+      </div>
+      <div class="audience-card reveal reveal-delay-3">
+        <div class="audience-card__emoji">🚀</div>
+        <div class="audience-card__title">Fitness Entrepreneurs</div>
+        <div class="audience-card__desc">Build a real fitness business — not just a side hustle. The platform grows as your ambition does.</div>
+      </div>
+      <div class="audience-card reveal reveal-delay-4">
+        <div class="audience-card__emoji">🏅</div>
+        <div class="audience-card__title">Certified Coaches</div>
+        <div class="audience-card__desc">FIT Africa-certified coaches get native integration with the network, certifications, and coach directory.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Kente Diamond Divider -->
+<div class="kente-divider" style="background:var(--navy-dark,#111822)">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="24" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <pattern id="kente-showcase-in" x="0" y="0" width="96" height="24" patternUnits="userSpaceOnUse">
+        <polygon points="12,2 22,12 12,22 2,12" fill="#C2572A"/>
+        <polygon points="36,2 46,12 36,22 26,12" fill="#D35400"/>
+        <polygon points="60,2 70,12 60,22 50,12" fill="#D4A12A"/>
+        <polygon points="84,2 94,12 84,22 74,12" fill="#27AE60"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="24" fill="url(#kente-showcase-in)"/>
+  </svg>
+</div>
+
+<!-- ============ INSIDE THE APP ============ -->
+<section class="section-pad bg-navy-dark" id="showcase">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:56px">
+      <div class="section-label section-label--navy-on-dark reveal">Inside the Platform</div>
+      <h2 class="heading-xl text-white reveal reveal-delay-1" style="margin-bottom:16px">
+        A platform built to be used, not just shown.
+      </h2>
+      <p class="body-lg reveal reveal-delay-2" style="color:rgba(250,246,240,.6);max-width:600px;margin:0 auto">
+        Every screen is designed for the real moments of fitness coaching — from first client onboarding
+        to monthly revenue review.
+      </p>
+    </div>
+    <div class="showcase-grid">
+      <div class="showcase-item reveal">
+        <div class="showcase-screen">
+          <div class="mini-screen" style="transform:scale(0.9)">
+            <div class="mini-screen__header"><span class="mini-screen__title">⊞ Coach Dashboard</span><span style="font-size:8px;color:rgba(250,246,240,.5)">Coach Amara Fitness</span></div>
+            <div class="mini-screen__body">
+              <div class="app-stats-row" style="gap:4px;margin-bottom:8px">
+                <div class="app-stat-card"><div class="app-stat-num" style="font-size:14px">24</div><div class="app-stat-label">Clients</div></div>
+                <div class="app-stat-card"><div class="app-stat-num terracotta" style="font-size:14px">8</div><div class="app-stat-label">Today</div></div>
+                <div class="app-stat-card"><div class="app-stat-num gold" style="font-size:14px">$4.2k</div><div class="app-stat-label">Revenue</div></div>
+              </div>
+              <div class="app-section-title">This Week</div>
+              <div class="mini-chart" style="margin-bottom:6px">
+                <div class="mini-bar" style="height:55%"></div><div class="mini-bar" style="height:70%"></div>
+                <div class="mini-bar highlight" style="height:90%"></div><div class="mini-bar" style="height:65%"></div>
+                <div class="mini-bar goal" style="height:85%"></div><div class="mini-bar" style="height:60%"></div>
+                <div class="mini-bar" style="height:40%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-caption"><div class="showcase-caption__title">Coach Dashboard Overview</div><div class="showcase-caption__desc">Active clients, daily sessions, revenue, and weekly activity at a glance.</div></div>
+      </div>
+      <div class="showcase-item reveal reveal-delay-1">
+        <div class="showcase-screen">
+          <div class="mini-screen" style="transform:scale(0.9)">
+            <div class="mini-screen__header"><span class="mini-screen__title">📅 Bookings — March 2026</span></div>
+            <div class="mini-screen__body">
+              <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:6px">
+                <div style="font-size:8px;text-align:center;color:var(--gray-500);font-weight:700;font-family:var(--font-heading)">M</div><div style="font-size:8px;text-align:center;color:var(--gray-500);font-weight:700;font-family:var(--font-heading)">T</div><div style="font-size:8px;text-align:center;color:var(--gray-500);font-weight:700;font-family:var(--font-heading)">W</div><div style="font-size:8px;text-align:center;color:var(--gray-500);font-weight:700;font-family:var(--font-heading)">T</div><div style="font-size:8px;text-align:center;color:var(--gray-500);font-weight:700;font-family:var(--font-heading)">F</div><div style="font-size:8px;text-align:center;color:var(--gray-500);font-weight:700;font-family:var(--font-heading)">S</div><div style="font-size:8px;text-align:center;color:var(--gray-500);font-weight:700;font-family:var(--font-heading)">S</div>
+              </div>
+              <div class="mini-cal">
+                <div class="mini-cal-day"></div><div class="mini-cal-day"></div><div class="mini-cal-day"></div>
+                <div class="mini-cal-day has-event">1</div><div class="mini-cal-day">2</div><div class="mini-cal-day has-event">3</div><div class="mini-cal-day">4</div>
+                <div class="mini-cal-day has-event">5</div><div class="mini-cal-day">6</div><div class="mini-cal-day has-event">7</div><div class="mini-cal-day today">8</div>
+                <div class="mini-cal-day has-event">9</div><div class="mini-cal-day">10</div><div class="mini-cal-day">11</div><div class="mini-cal-day has-event">12</div>
+              </div>
+              <div style="margin-top:8px"><div class="app-client-row" style="margin-bottom:3px"><div class="app-client-avatar" style="background:var(--terracotta);width:16px;height:16px;font-size:7px">KO</div><div class="app-client-info"><div class="app-client-name" style="font-size:7px">Kwame O. — 10:00 AM</div></div><div class="app-client-badge done" style="font-size:6px">Confirmed</div></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-caption"><div class="showcase-caption__title">Booking & Calendar</div><div class="showcase-caption__desc">Manage sessions, availability, and scheduling — clients self-book, you stay in control.</div></div>
+      </div>
+      <div class="showcase-item reveal reveal-delay-2">
+        <div class="showcase-screen">
+          <div class="mini-screen" style="transform:scale(0.9)">
+            <div class="mini-screen__header"><span class="mini-screen__title">💪 Workout Plan</span></div>
+            <div class="mini-screen__body">
+              <div style="font-size:10px;font-weight:800;color:var(--navy);margin-bottom:2px;font-family:var(--font-heading)">Push Day A — Upper Body</div>
+              <div style="font-size:8px;color:var(--gray-500);margin-bottom:8px;font-family:var(--font-heading)">Week 4 / Day 2 · 5 exercises</div>
+              <div class="mini-workout-item"><div class="mini-workout-num">1</div><div class="mini-workout-name">Bench Press</div><div class="mini-workout-sets">4×8 · 70kg</div><div class="mini-workout-check">✅</div></div>
+              <div class="mini-workout-item"><div class="mini-workout-num">2</div><div class="mini-workout-name">Incline DB Press</div><div class="mini-workout-sets">3×10 · 24kg</div><div class="mini-workout-check">✅</div></div>
+              <div class="mini-workout-item"><div class="mini-workout-num">3</div><div class="mini-workout-name">Shoulder Press</div><div class="mini-workout-sets">3×12 · 20kg</div><div class="mini-workout-check">✅</div></div>
+              <div class="mini-workout-item" style="opacity:0.5"><div class="mini-workout-num" style="background:var(--gray-300)">4</div><div class="mini-workout-name">Lateral Raises</div><div class="mini-workout-sets">4×15 · 8kg</div><div class="mini-workout-check">○</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-caption"><div class="showcase-caption__title">Workout Plan View</div><div class="showcase-caption__desc">Clients follow coach-built programmes with video demos, logging, and real-time progress.</div></div>
+      </div>
+      <div class="showcase-item reveal reveal-delay-1">
+        <div class="showcase-screen">
+          <div class="mini-screen" style="transform:scale(0.9)">
+            <div class="mini-screen__header"><span class="mini-screen__title">📋 Forms & Waivers</span></div>
+            <div class="mini-screen__body">
+              <div style="font-size:9px;font-weight:700;color:var(--navy);margin-bottom:6px;font-family:var(--font-heading)">Active Forms — Coach Amara</div>
+              <div style="display:flex;flex-direction:column;gap:5px">
+                <div style="background:var(--white);border-radius:5px;padding:7px 8px;display:flex;align-items:center;gap:7px;box-shadow:0 1px 3px rgba(0,0,0,.06)"><span style="font-size:13px">📝</span><div style="flex:1"><div style="font-size:8px;font-weight:700;color:var(--navy);font-family:var(--font-heading)">Client Intake Form</div><div style="font-size:7px;color:var(--gray-500);font-family:var(--font-heading)">Sent to 8 clients</div></div><span style="font-size:7px;background:rgba(45,106,79,.1);color:var(--forest);padding:2px 6px;border-radius:10px;font-weight:700;font-family:var(--font-heading)">Active</span></div>
+                <div style="background:var(--white);border-radius:5px;padding:7px 8px;display:flex;align-items:center;gap:7px;box-shadow:0 1px 3px rgba(0,0,0,.06)"><span style="font-size:13px">⚖️</span><div style="flex:1"><div style="font-size:8px;font-weight:700;color:var(--navy);font-family:var(--font-heading)">Liability Waiver</div><div style="font-size:7px;color:var(--gray-500);font-family:var(--font-heading)">24 signatures collected</div></div><span style="font-size:7px;background:rgba(45,106,79,.1);color:var(--forest);padding:2px 6px;border-radius:10px;font-weight:700;font-family:var(--font-heading)">Active</span></div>
+                <div style="background:var(--white);border-radius:5px;padding:7px 8px;display:flex;align-items:center;gap:7px;box-shadow:0 1px 3px rgba(0,0,0,.06)"><span style="font-size:13px">❤️</span><div style="flex:1"><div style="font-size:8px;font-weight:700;color:var(--navy);font-family:var(--font-heading)">PAR-Q Health Screen</div><div style="font-size:7px;color:var(--gray-500);font-family:var(--font-heading)">Required before first session</div></div><span style="font-size:7px;background:rgba(194,87,42,.1);color:var(--terracotta);padding:2px 6px;border-radius:10px;font-weight:700;font-family:var(--font-heading)">3 Pending</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-caption"><div class="showcase-caption__title">Digital Forms & Waivers</div><div class="showcase-caption__desc">Build, send, and collect intake forms, consent waivers, PAR-Q screens, and check-ins — all inside the platform.</div></div>
+      </div>
+      <div class="showcase-item reveal reveal-delay-2">
+        <div class="showcase-screen">
+          <div class="mini-screen" style="transform:scale(0.9)">
+            <div class="mini-screen__header"><span class="mini-screen__title">📊 Revenue & Billing</span></div>
+            <div class="mini-screen__body">
+              <div class="mini-revenue-num">$4,280</div>
+              <div class="mini-revenue-sub">March 2026 · ↑ 18% vs last month</div>
+              <div class="app-section-title">Revenue Breakdown</div>
+              <div style="margin-bottom:6px"><div style="display:flex;justify-content:space-between;font-size:8px;font-family:var(--font-heading);margin-bottom:2px"><span style="color:var(--gray-600)">Subscriptions</span><span style="font-weight:700;color:var(--navy)">$3,200</span></div><div class="mini-rev-bar"><div class="mini-rev-fill" style="width:75%"></div></div></div>
+              <div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;font-size:8px;font-family:var(--font-heading);margin-bottom:2px"><span style="color:var(--gray-600)">One-off packages</span><span style="font-weight:700;color:var(--navy)">$800</span></div><div class="mini-rev-bar"><div class="mini-rev-fill" style="width:19%;background:var(--gold)"></div></div></div>
+              <div class="mini-chart"><div class="mini-bar" style="height:45%"></div><div class="mini-bar" style="height:60%"></div><div class="mini-bar" style="height:78%"></div><div class="mini-bar goal" style="height:70%"></div><div class="mini-bar highlight" style="height:90%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-caption"><div class="showcase-caption__title">Revenue & Analytics</div><div class="showcase-caption__desc">Track income by subscription, package, and session. Full financial visibility for your business.</div></div>
+      </div>
+      <div class="showcase-item reveal reveal-delay-3">
+        <div class="showcase-screen">
+          <div class="mini-screen" style="transform:scale(0.9)">
+            <div class="mini-screen__header"><span class="mini-screen__title">💬 Messages — Kwame Osei</span></div>
+            <div class="mini-screen__body">
+              <div class="mini-msg">
+                <div class="mini-msg-row from-coach"><div class="app-client-avatar" style="background:var(--gold-dark);width:18px;height:18px;font-size:7px">CA</div><div class="mini-bubble coach">Great session today Kwame. Week 4 form is looking strong — keep that hip hinge on the RDLs.</div></div>
+                <div class="mini-msg-row from-client"><div class="mini-bubble client">Thanks Coach! Felt solid. Should I increase the load on bench next week?</div><div class="app-client-avatar" style="background:var(--forest);width:18px;height:18px;font-size:7px">KO</div></div>
+                <div class="mini-msg-row from-coach"><div class="app-client-avatar" style="background:var(--gold-dark);width:18px;height:18px;font-size:7px">CA</div><div class="mini-bubble coach">Yes — go to 72.5kg. Make sure you submit this week's check-in before Friday 💪</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-caption"><div class="showcase-caption__title">In-App Messaging</div><div class="showcase-caption__desc">Structured coach-client communication. Every conversation in one place, no WhatsApp dependency.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FINAL CTA ============ -->
+<section class="cta-section section-pad" id="cta">
+  <div class="container">
+    <div class="cta-section__inner">
+      <div class="cta-section__kicker reveal">Get Started with Fit Africa</div>
+      <h2 class="display-lg cta-section__headline reveal reveal-delay-1">
+        Ready to transform how you deliver fitness?
+      </h2>
+      <p class="cta-section__sub reveal reveal-delay-2">
+        Join coaches, clients, and fitness businesses already building on Fit Africa.
+        Whether you're a solo PT or an enterprise brand — there's a version of this built for you.
+      </p>
+      <div class="cta-buttons reveal reveal-delay-3">
+        <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--gold btn--lg">
+          Create a Free Account
+        </a>
+        <a href="mailto:hello@fitafrica.tech" class="btn btn--outline-cream btn--lg">
+          Book a Demo
+        </a>
+      </div>
+      <p class="reveal reveal-delay-4" style="margin-top:28px;color:rgba(255,255,255,.55);font-size:14px">
+        No commitment required. Talk to us about your needs first.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <!-- Brand -->
+      <div>
+        <div class="footer__brand-logo">
+          <img src="logo.png" class="footer__brand-img" alt="FIT Africa" />
+        </div>
+        <p class="footer__tagline">
+          The operating system for modern fitness.<br />
+          Born in Lagos. Built for the world.
+        </p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram">📸</a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn">💼</a>
+          <a href="#" class="footer__social-link" aria-label="Twitter/X">𝕏</a>
+          <a href="#" class="footer__social-link" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+
+      <!-- Platform -->
+      <div>
+        <div class="footer__col-title">Platform</div>
+        <ul class="footer__links">
+          <li><a href="coaches.html">For Coaches</a></li>
+          <li><a href="clients.html">For Clients</a></li>
+          <li><a href="enterprise.html">Enterprise</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="index.html#showcase">Inside the App</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <div class="footer__col-title">Company</div>
+        <ul class="footer__links">
+          <li><a href="index.html#about">About Fit Africa</a></li>
+          <li><a href="#">FIT Africa International</a></li>
+          <li><a href="#">Safari Fitness Programmes</a></li>
+          <li><a href="#">Partnerships</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+
+      <!-- Get Started -->
+      <div>
+        <div class="footer__col-title">Get Started</div>
+        <ul class="footer__links">
+          <li><a href="#cta">Book a Demo</a></li>
+          <li><a href="#cta">Join the Waitlist</a></li>
+          <li><a href="mailto:hello@fitafrica.tech">Contact Us</a></li>
+          <li><a href="#">Coach Directory</a></li>
+          <li><a href="#">Find a Trainer</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">
+        © 2026 FIT Africa Technologies Ltd. All rights reserved.
+      </div>
+      <div class="footer__domain">
+        <strong>FitAfrica.tech</strong>
+      </div>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING THEME SWITCHER ============ -->
+<div class="theme-switcher" id="themeSwitcher">
+  <div class="theme-panel" id="themePanel">
+    <div class="theme-panel__title">African Themes</div>
+    <button class="theme-btn active" data-theme-val="terracotta">
+      <div class="theme-btn__swatch swatch--terracotta"></div>
+      <div class="theme-btn__text">
+        <span class="theme-btn__label">Terracotta</span>
+        <span class="theme-btn__sub">Pan-African warmth</span>
+      </div>
+      <span class="check">✓</span>
+    </button>
+    <button class="theme-btn" data-theme-val="kente-gold">
+      <div class="theme-btn__swatch swatch--kente-gold"></div>
+      <div class="theme-btn__text">
+        <span class="theme-btn__label">Kente Gold</span>
+        <span class="theme-btn__sub">Ashanti royalty</span>
+      </div>
+      <span class="check">✓</span>
+    </button>
+    <button class="theme-btn" data-theme-val="savanna">
+      <div class="theme-btn__swatch swatch--savanna"></div>
+      <div class="theme-btn__text">
+        <span class="theme-btn__label">Savanna</span>
+        <span class="theme-btn__sub">Forest energy</span>
+      </div>
+      <span class="check">✓</span>
+    </button>
+    <button class="theme-btn" data-theme-val="lagos">
+      <div class="theme-btn__swatch swatch--lagos"></div>
+      <div class="theme-btn__text">
+        <span class="theme-btn__label">Lagos Sunrise</span>
+        <span class="theme-btn__sub">Vibrant city fire</span>
+      </div>
+      <span class="check">✓</span>
+    </button>
+  </div>
+  <div class="theme-switcher__toggle" id="themeToggle" title="Switch theme">🎨</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

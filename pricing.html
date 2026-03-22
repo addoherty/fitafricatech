@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="terracotta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — FitAfrica</title>
+  <meta name="description" content="FIT Africa is the all-in-one platform for coaches, clients, and fitness businesses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Inter:wght@400;500;600;700&family=Unbounded:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="themes.css" />
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="nav nav--solid" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <img src="logo.png" class="nav__logo-img" alt="FIT Africa" />
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="coaches.html">Coaches</a></li>
+      <li><a href="clients.html">Clients</a></li>
+      <li><a href="enterprise.html">Enterprise</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+    <div class="nav__ctas">
+      <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--outline-cream btn--sm">Try for Free</a>
+      <a href="mailto:hello@fitafrica.tech" class="btn btn--primary btn--sm">Book a Demo</a>
+    </div>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Navigation -->
+<nav class="nav__mobile" id="navMobile">
+  <a href="index.html">Home</a>
+  <a href="coaches.html">Coaches</a>
+  <a href="clients.html">Clients</a>
+  <a href="enterprise.html">Enterprise</a>
+  <a href="pricing.html">Pricing</a>
+  <div class="divider"></div>
+  <a href="mailto:hello@fitafrica.tech" class="btn btn--outline-cream">Book a Demo</a>
+  <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--primary" style="margin-top:8px">Try for Free</a>
+</nav>
+
+
+<!-- Kente Diamond Divider -->
+<div class="kente-divider" style="background:var(--navy-dark);padding-top:var(--nav-height,72px)">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="24" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <pattern id="kente5" x="0" y="0" width="96" height="24" patternUnits="userSpaceOnUse">
+        <polygon points="12,2 22,12 12,22 2,12" fill="none" stroke="rgba(212,161,42,0.35)" stroke-width="1.2"/>
+        <polygon points="12,6 18,12 12,18 6,12" fill="rgba(212,161,42,0.08)"/>
+        <polygon points="36,2 46,12 36,22 26,12" fill="none" stroke="rgba(194,87,42,0.3)" stroke-width="1.2"/>
+        <polygon points="60,2 70,12 60,22 50,12" fill="none" stroke="rgba(212,161,42,0.35)" stroke-width="1.2"/>
+        <polygon points="60,6 66,12 60,18 54,12" fill="rgba(212,161,42,0.08)"/>
+        <polygon points="84,2 94,12 84,22 74,12" fill="none" stroke="rgba(194,87,42,0.3)" stroke-width="1.2"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="24" fill="url(#kente5)"/>
+  </svg>
+</div>
+
+<!-- ============ PRICING ============ -->
+<section class="pricing-section section-pad kente-texture" id="pricing">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-kicker">Simple Pricing</div>
+      <h2 class="display-lg pricing-headline">Start free. Scale when you're ready.</h2>
+      <p class="section-sub">No long contracts. No hidden fees. Start free and upgrade when your business grows.</p>
+    </div>
+
+    <div class="pricing-grid reveal reveal-delay-1">
+
+      <!-- FREE -->
+      <div class="pricing-card pricing-card--free">
+        <div class="pricing-card__badge">Free Plan</div>
+        <div class="pricing-card__tier">Starter</div>
+        <div class="pricing-card__price">
+          <span class="pricing-card__amount">$0</span>
+          <span class="pricing-card__period">/month</span>
+        </div>
+        <p class="pricing-card__tagline">Perfect for coaches just getting started. No credit card required.</p>
+        <ul class="pricing-card__features">
+          <li><span class="feat-check">✓</span> Up to <strong>5 active clients</strong></li>
+          <li><span class="feat-check">✓</span> Workout plan builder</li>
+          <li><span class="feat-check">✓</span> Session booking & calendar</li>
+          <li><span class="feat-check">✓</span> Client progress tracking</li>
+          <li><span class="feat-check">✓</span> In-app messaging</li>
+          <li><span class="feat-check">✓</span> 2 digital form templates</li>
+          <li><span class="feat-muted">—</span> Payments & subscriptions</li>
+          <li><span class="feat-muted">—</span> Video library</li>
+          <li><span class="feat-muted">—</span> Revenue analytics</li>
+        </ul>
+        <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--outline-dark btn--full pricing-card__cta">
+          Try a Free Account Now
+        </a>
+        <p class="pricing-card__footnote">Always free. No card needed.</p>
+      </div>
+
+      <!-- COACH PRO -->
+      <div class="pricing-card pricing-card--pro">
+        <div class="pricing-card__badge pricing-card__badge--pro">Most Popular</div>
+        <div class="pricing-card__tier">Coach Pro</div>
+        <div class="pricing-card__price">
+          <span class="pricing-card__amount">₦30,000</span>
+          <span class="pricing-card__period">/month</span>
+        </div>
+        <p class="pricing-card__tagline">Everything you need to run a full-time coaching business.</p>
+        <ul class="pricing-card__features">
+          <li><span class="feat-check feat-check--pro">✓</span> <strong>Unlimited clients</strong></li>
+          <li><span class="feat-check feat-check--pro">✓</span> Everything in Starter</li>
+          <li><span class="feat-check feat-check--pro">✓</span> Full forms & waivers library</li>
+          <li><span class="feat-check feat-check--pro">✓</span> Video library & exercise demos</li>
+          <li><span class="feat-check feat-check--pro">✓</span> Stripe payments & subscriptions</li>
+          <li><span class="feat-check feat-check--pro">✓</span> Revenue & business analytics</li>
+          <li><span class="feat-check feat-check--pro">✓</span> Custom branded coaching page</li>
+          <li><span class="feat-check feat-check--pro">✓</span> Priority support</li>
+          <li><span class="feat-check feat-check--pro">✓</span> Multi-week programme builder</li>
+        </ul>
+        <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--primary btn--full pricing-card__cta">
+          Get Coach Pro
+        </a>
+        <p class="pricing-card__footnote">14-day free trial. Cancel anytime.</p>
+      </div>
+
+      <!-- ENTERPRISE -->
+      <div class="pricing-card pricing-card--enterprise">
+        <div class="pricing-card__badge pricing-card__badge--enterprise">For Teams</div>
+        <div class="pricing-card__tier">Enterprise</div>
+        <div class="pricing-card__price">
+          <span class="pricing-card__amount">Custom</span>
+        </div>
+        <p class="pricing-card__tagline">Multi-coach teams, gym brands, and large fitness businesses.</p>
+        <ul class="pricing-card__features">
+          <li><span class="feat-check feat-check--ent">✓</span> Everything in Coach Pro</li>
+          <li><span class="feat-check feat-check--ent">✓</span> Multi-coach team management</li>
+          <li><span class="feat-check feat-check--ent">✓</span> White-label branding</li>
+          <li><span class="feat-check feat-check--ent">✓</span> Centralised client oversight</li>
+          <li><span class="feat-check feat-check--ent">✓</span> Coach commission structures</li>
+          <li><span class="feat-check feat-check--ent">✓</span> Enterprise billing & reporting</li>
+          <li><span class="feat-check feat-check--ent">✓</span> Dedicated account manager</li>
+          <li><span class="feat-check feat-check--ent">✓</span> SLA & uptime guarantee</li>
+          <li><span class="feat-check feat-check--ent">✓</span> Custom integrations & API</li>
+        </ul>
+        <a href="mailto:hello@fitafrica.tech?subject=Enterprise Enquiry" class="btn btn--gold btn--full pricing-card__cta">
+          Talk to Sales
+        </a>
+        <p class="pricing-card__footnote">Custom contract. Volume discounts available.</p>
+      </div>
+
+    </div>
+
+    <p class="pricing-note reveal reveal-delay-2">
+      All plans include SSL security, GDPR compliance, and mobile app access for your clients. Prices in USD. Local currency billing available for African markets.
+    </p>
+  </div>
+</section>
+
+<!-- ============ MINI CTA ============ -->
+<section class="cta-mini" id="cta">
+  <div class="container">
+    <p class="cta-mini__text">Start free. No credit card required.</p>
+    <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--primary btn--lg">Create a Free Account →</a>
+  </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <!-- Brand -->
+      <div>
+        <div class="footer__brand-logo">
+          <img src="logo.png" class="footer__brand-img" alt="FIT Africa" />
+        </div>
+        <p class="footer__tagline">
+          The operating system for modern fitness.<br />
+          Born in Lagos. Built for the world.
+        </p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram">📸</a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn">💼</a>
+          <a href="#" class="footer__social-link" aria-label="Twitter/X">𝕏</a>
+          <a href="#" class="footer__social-link" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+
+      <!-- Platform -->
+      <div>
+        <div class="footer__col-title">Platform</div>
+        <ul class="footer__links">
+          <li><a href="coaches.html">For Coaches</a></li>
+          <li><a href="clients.html">For Clients</a></li>
+          <li><a href="enterprise.html">Enterprise</a></li>
+          <li><a href="index.html#showcase">Inside the App</a></li>
+          <li><a href="index.html">Platform Overview</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <div class="footer__col-title">Company</div>
+        <ul class="footer__links">
+          <li><a href="index.html#about">About Fit Africa</a></li>
+          <li><a href="#">FIT Africa International</a></li>
+          <li><a href="#">Safari Fitness Programmes</a></li>
+          <li><a href="#">Partnerships</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+
+      <!-- Get Started -->
+      <div>
+        <div class="footer__col-title">Get Started</div>
+        <ul class="footer__links">
+          <li><a href="#cta">Book a Demo</a></li>
+          <li><a href="#cta">Join the Waitlist</a></li>
+          <li><a href="mailto:hello@fitafrica.tech">Contact Us</a></li>
+          <li><a href="#">Coach Directory</a></li>
+          <li><a href="#">Find a Trainer</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">
+        © 2026 FIT Africa Technologies Ltd. All rights reserved.
+      </div>
+      <div class="footer__domain">
+        <strong>FitAfrica.tech</strong>
+      </div>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING THEME SWITCHER ============ -->
+<div class="theme-switcher" id="themeSwitcher">
+  <div class="theme-panel" id="themePanel">
+    <div class="theme-panel__title">African Themes</div>
+    <button class="theme-btn active" data-theme-val="terracotta">
+      <div class="theme-btn__swatch swatch--terracotta"></div>
+      <div class="theme-btn__text">
+        <span class="theme-btn__label">Terracotta</span>
+        <span class="theme-btn__sub">Pan-African warmth</span>
+      </div>
+      <span class="check">✓</span>
+    </button>
+    <button class="theme-btn" data-theme-val="kente-gold">
+      <div class="theme-btn__swatch swatch--kente-gold"></div>
+      <div class="theme-btn__text">
+        <span class="theme-btn__label">Kente Gold</span>
+        <span class="theme-btn__sub">Ashanti royalty</span>
+      </div>
+      <span class="check">✓</span>
+    </button>
+    <button class="theme-btn" data-theme-val="savanna">
+      <div class="theme-btn__swatch swatch--savanna"></div>
+      <div class="theme-btn__text">
+        <span class="theme-btn__label">Savanna</span>
+        <span class="theme-btn__sub">Forest energy</span>
+      </div>
+      <span class="check">✓</span>
+    </button>
+    <button class="theme-btn" data-theme-val="lagos">
+      <div class="theme-btn__swatch swatch--lagos"></div>
+      <div class="theme-btn__text">
+        <span class="theme-btn__label">Lagos Sunrise</span>
+        <span class="theme-btn__sub">Vibrant city fire</span>
+      </div>
+      <span class="check">✓</span>
+    </button>
+  </div>
+  <div class="theme-switcher__toggle" id="themeToggle" title="Switch theme">🎨</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

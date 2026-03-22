@@ -1,0 +1,444 @@
+/* ============================================================
+   FIT AFRICA — African Themes & Live Design System
+   4 themes: terracotta (default) | kente-gold | savanna | lagos
+   ============================================================ */
+
+/* ---- Theme: Kente Gold (navy + deep gold + copper) -------- */
+[data-theme="kente-gold"] {
+  --terracotta:        #D4A12A;
+  --terracotta-dark:   #A07A1E;
+  --terracotta-light:  #E0B84A;
+  --gold:              #B87333;
+  --gold-dark:         #8A5520;
+  --gold-light:        #CC8C4A;
+  --forest:            #2D6A4F;
+  --navy:              #0D1B2A;
+  --navy-dark:         #060F18;
+  --navy-mid:          #152233;
+  --navy-light:        #1E2E40;
+  --cream:             #FDF8F0;
+}
+
+/* ---- Theme: Savanna (deep forest + golden yellow) --------- */
+[data-theme="savanna"] {
+  --terracotta:        #2D8A45;
+  --terracotta-dark:   #1E5E30;
+  --terracotta-light:  #3DAA58;
+  --gold:              #D4A12A;
+  --gold-dark:         #A07A1E;
+  --gold-light:        #E0B84A;
+  --forest:            #8B4513;
+  --navy:              #0F2B1A;
+  --navy-dark:         #071510;
+  --navy-mid:          #163D24;
+  --navy-light:        #1E5030;
+  --cream:             #F5FAF2;
+}
+
+/* ---- Theme: Lagos Sunrise (vibrant red + warm amber) ------- */
+[data-theme="lagos"] {
+  --terracotta:        #D93020;
+  --terracotta-dark:   #AA1E10;
+  --terracotta-light:  #F04030;
+  --gold:              #F39C12;
+  --gold-dark:         #C07A08;
+  --gold-light:        #F5B530;
+  --forest:            #2D6A4F;
+  --navy:              #1A0808;
+  --navy-dark:         #0D0404;
+  --navy-mid:          #280C0C;
+  --navy-light:        #351010;
+  --cream:             #FFF8F5;
+}
+
+/* ---- Africa Continent SVG Shape --------------------------- */
+.africa-shape {
+  position: absolute;
+  pointer-events: none;
+  fill: var(--white);
+  opacity: 0.045;
+  filter: blur(0.5px);
+  z-index: 1;
+}
+.africa-shape--hero {
+  right: -40px;
+  bottom: -100px;
+  width: clamp(280px, 36vw, 520px);
+  opacity: 0.055;
+}
+
+/* ---- Kente Diamond Divider -------------------------------- */
+.kente-divider {
+  width: 100%;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: block;
+  line-height: 0;
+}
+.kente-divider svg {
+  width: 100%;
+  height: 24px;
+  display: block;
+}
+
+/* ---- African Grid Texture --------------------------------- */
+.kente-texture {
+  position: relative;
+}
+.kente-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      transparent 0,
+      transparent 10px,
+      rgba(212,161,42,0.022) 10px,
+      rgba(212,161,42,0.022) 11px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent 0,
+      transparent 10px,
+      rgba(212,161,42,0.022) 10px,
+      rgba(212,161,42,0.022) 11px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+.kente-texture > * { position: relative; z-index: 1; }
+
+/* ---- Floating Theme Switcher ------------------------------ */
+.theme-switcher {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.theme-switcher__toggle {
+  width: 52px;
+  height: 52px;
+  background: var(--navy-mid, #1B2838);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+  border: 2px solid rgba(255,255,255,0.1);
+  font-size: 22px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
+}
+.theme-switcher__toggle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 32px rgba(0,0,0,0.5);
+}
+.theme-switcher__toggle.open { transform: rotate(30deg) scale(1.05); }
+
+.theme-panel {
+  background: rgba(12, 18, 28, 0.97);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 12px 48px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.06);
+  min-width: 195px;
+  transform-origin: bottom right;
+  transition: opacity 0.22s var(--ease-out, cubic-bezier(0.16,1,0.3,1)),
+              transform 0.22s var(--ease-out, cubic-bezier(0.16,1,0.3,1));
+  opacity: 0;
+  transform: scale(0.88) translateY(10px);
+  pointer-events: none;
+}
+.theme-panel.open {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  pointer-events: auto;
+}
+.theme-panel__title {
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: var(--font-heading, 'Plus Jakarta Sans', sans-serif);
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  margin-bottom: 2px;
+}
+.theme-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1.5px solid transparent;
+  transition: all 0.18s ease;
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-heading, 'Plus Jakarta Sans', sans-serif);
+}
+.theme-btn:hover { background: rgba(255,255,255,0.05); }
+.theme-btn.active {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.15);
+}
+.theme-btn__swatch {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 2px solid rgba(255,255,255,0.15);
+}
+.swatch--terracotta { background: linear-gradient(135deg, #C2572A 40%, #D4A12A); }
+.swatch--kente-gold { background: linear-gradient(135deg, #0D1B2A 40%, #D4A12A); }
+.swatch--savanna    { background: linear-gradient(135deg, #0F2B1A 40%, #2D8A45); }
+.swatch--lagos      { background: linear-gradient(135deg, #D93020 40%, #F39C12); }
+.theme-btn__text {}
+.theme-btn__label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.85);
+  line-height: 1;
+  margin-bottom: 2px;
+}
+.theme-btn__sub {
+  display: block;
+  font-size: 10px;
+  color: rgba(255,255,255,0.35);
+}
+.theme-btn .check {
+  margin-left: auto;
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.theme-btn.active .check { opacity: 1; }
+
+/* ---- Brand Identity Section ------------------------------- */
+.brand-section {
+  background: var(--navy-dark);
+  position: relative;
+  overflow: hidden;
+}
+.brand-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 59px, rgba(255,255,255,0.012) 60px),
+    repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(255,255,255,0.012) 60px);
+  pointer-events: none;
+}
+.brand-section__inner { position: relative; z-index: 1; }
+
+/* Pan-African banner stripe */
+.pan-african-stripe {
+  height: 5px;
+  display: flex;
+  width: 100%;
+}
+.pan-stripe { flex: 1; }
+.pan-red    { background: #C0392B; }
+.pan-orange { background: #D35400; }
+.pan-yellow { background: #D4A12A; }
+.pan-green  { background: #27AE60; }
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+  margin-top: 56px;
+}
+
+/* Theme cards */
+.theme-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.theme-card {
+  border-radius: var(--radius-lg);
+  padding: 20px 16px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+.theme-card:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+.theme-card.active { border-color: rgba(255,255,255,0.4); }
+.theme-card.active::after {
+  content: '✓';
+  position: absolute;
+  top: 10px; right: 12px;
+  font-size: 12px;
+  color: var(--white);
+  font-weight: 700;
+  background: rgba(255,255,255,0.15);
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.theme-card--terracotta { background: linear-gradient(145deg, #9E3F1A 0%, #C2572A 60%, #D4A12A); }
+.theme-card--kente-gold { background: linear-gradient(145deg, #060F18 0%, #0D1B2A 60%, #D4A12A); }
+.theme-card--savanna    { background: linear-gradient(145deg, #071510 0%, #0F2B1A 60%, #2D8A45); }
+.theme-card--lagos      { background: linear-gradient(145deg, #0D0404 0%, #1A0808 60%, #D93020); }
+
+.theme-card__name {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--white);
+  font-family: var(--font-heading, 'Plus Jakarta Sans', sans-serif);
+  margin-bottom: 3px;
+}
+.theme-card__desc {
+  font-size: 10px;
+  color: rgba(255,255,255,0.5);
+  font-family: var(--font-heading, 'Plus Jakarta Sans', sans-serif);
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.theme-card__palette {
+  display: flex;
+  gap: 4px;
+}
+.theme-card__dot {
+  width: 13px; height: 13px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.18);
+}
+
+/* Brand preview area */
+.brand-preview-wrap {
+  position: sticky;
+  top: 100px;
+}
+.brand-preview-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius-xl);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.brand-preview-card__label {
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--font-heading, 'Plus Jakarta Sans', sans-serif);
+  margin-bottom: 14px;
+}
+/* Live button preview */
+.btn-preview-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.btn-preview {
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: var(--font-heading, 'Plus Jakarta Sans', sans-serif);
+  border: none;
+  cursor: default;
+}
+.btn-preview--primary {
+  background: var(--terracotta, #C2572A);
+  color: var(--white);
+}
+.btn-preview--secondary {
+  background: var(--gold, #D4A12A);
+  color: var(--navy, #1B2838);
+}
+.btn-preview--ghost {
+  background: transparent;
+  border: 1.5px solid var(--terracotta, #C2572A);
+  color: var(--terracotta, #C2572A);
+}
+
+/* Colour swatches preview */
+.swatch-row {
+  display: flex;
+  gap: 6px;
+}
+.swatch-block {
+  flex: 1;
+  height: 36px;
+  border-radius: 8px;
+  position: relative;
+}
+.swatch-block::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: -18px;
+  left: 0; right: 0;
+  font-size: 8px;
+  text-align: center;
+  color: rgba(255,255,255,0.3);
+  font-family: var(--font-heading, 'Plus Jakarta Sans', sans-serif);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.swatch-primary   { background: var(--terracotta, #C2572A); }
+.swatch-gold      { background: var(--gold, #D4A12A); }
+.swatch-dark      { background: var(--navy, #1B2838); border: 1px solid rgba(255,255,255,0.08); }
+.swatch-accent    { background: var(--forest, #2D6A4F); }
+.swatch-bg        { background: var(--cream, #FAF6F0); border: 1px solid rgba(255,255,255,0.06); }
+
+/* Cultural design callouts */
+.cultural-callouts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 24px;
+}
+.cultural-callout {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius-md);
+  padding: 14px;
+}
+.cultural-callout__icon { font-size: 20px; margin-bottom: 6px; }
+.cultural-callout__title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--white);
+  font-family: var(--font-heading, 'Plus Jakarta Sans', sans-serif);
+  margin-bottom: 4px;
+}
+.cultural-callout__desc {
+  font-size: 11px;
+  color: rgba(250,246,240,0.45);
+  font-family: var(--font-heading, 'Plus Jakarta Sans', sans-serif);
+  line-height: 1.4;
+}
+
+/* ---- Responsive ------------------------------------------- */
+@media (max-width: 900px) {
+  .brand-grid { grid-template-columns: 1fr; }
+  .brand-preview-wrap { position: static; }
+}
+@media (max-width: 600px) {
+  .theme-switcher { bottom: 16px; right: 16px; }
+  .theme-cards { grid-template-columns: 1fr 1fr; }
+  .cultural-callouts { grid-template-columns: 1fr 1fr; }
+}
