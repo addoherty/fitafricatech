@@ -64,8 +64,59 @@
   <div class="container">
     <div class="portal-layout portal-layout--reverse">
 
+      <!-- Head -->
+      <div class="portal-layout__head">
+        <div class="section-label section-label--terracotta reveal">Client Portal</div>
+        <h2 class="heading-xl reveal reveal-delay-1" style="color:var(--navy);margin-bottom:16px">
+          A premium fitness experience your clients will never want to leave.
+        </h2>
+        <p class="body-lg text-muted reveal reveal-delay-2" style="margin-bottom:8px">
+          Your clients deserve more than a PDF and a WhatsApp message. When they log into
+          Fit Africa, they get a polished, guided experience that keeps them motivated,
+          consistent, and connected to their coach every day.
+        </p>
+        <p class="body-lg text-muted reveal reveal-delay-2" style="margin-bottom:0">
+          Higher engagement means fewer drop-offs, stronger results, and a business that
+          grows on word-of-mouth.
+        </p>
+      </div>
+
+      <!-- Feature Tiles -->
+      <div class="portal-features reveal reveal-delay-3" id="clientTabs">
+        <div class="portal-feature portal-feature--light active" data-client-tab="workout">
+          <div class="portal-feature__icon">🏋️</div>
+          <div class="portal-feature__title">Personalised Workouts</div>
+          <div class="portal-feature__desc">Coach-assigned plans with video demos, sets, reps, and guidance.</div>
+        </div>
+        <div class="portal-feature portal-feature--light" data-client-tab="progress">
+          <div class="portal-feature__icon">📈</div>
+          <div class="portal-feature__title">Progress Tracking</div>
+          <div class="portal-feature__desc">Log measurements, photos, and training data. See your transformation.</div>
+        </div>
+        <div class="portal-feature portal-feature--light" data-client-tab="forms">
+          <div class="portal-feature__icon">📝</div>
+          <div class="portal-feature__title">Digital Forms</div>
+          <div class="portal-feature__desc">Complete intake forms, consent waivers, and progress check-ins — all inside the app.</div>
+        </div>
+        <div class="portal-feature portal-feature--light" data-client-tab="bookings">
+          <div class="portal-feature__icon">📅</div>
+          <div class="portal-feature__title">Session Booking</div>
+          <div class="portal-feature__desc">Browse your coach's availability and book in seconds — no WhatsApp needed.</div>
+        </div>
+        <div class="portal-feature portal-feature--light" data-client-tab="messages">
+          <div class="portal-feature__icon">💬</div>
+          <div class="portal-feature__title">Coach Messaging</div>
+          <div class="portal-feature__desc">Direct, structured communication with your coach inside the app.</div>
+        </div>
+        <div class="portal-feature portal-feature--light" data-client-tab="achievements">
+          <div class="portal-feature__icon">🏆</div>
+          <div class="portal-feature__title">Achievements & Streaks</div>
+          <div class="portal-feature__desc">Milestone badges, streaks, and celebration moments that build habits.</div>
+        </div>
+      </div>
+
       <!-- Phone Mockup (Interactive) -->
-      <div style="display:flex;justify-content:center;align-items:center;" class="reveal">
+      <div class="portal-layout__visual reveal">
         <div class="phone-frame">
           <div class="phone-screen">
             <div class="phone-notch-bar">
@@ -183,58 +234,9 @@
         </div>
       </div>
 
-      <!-- Copy -->
-      <div>
-        <div class="section-label section-label--terracotta reveal">Client Portal</div>
-        <h2 class="heading-xl reveal reveal-delay-1" style="color:var(--navy);margin-bottom:16px">
-          A premium fitness experience your clients will never want to leave.
-        </h2>
-        <p class="body-lg text-muted reveal reveal-delay-2" style="margin-bottom:8px">
-          Your clients deserve more than a PDF and a WhatsApp message. When they log into
-          Fit Africa, they get a polished, guided experience that keeps them motivated,
-          consistent, and connected to their coach every day.
-        </p>
-        <p class="body-lg text-muted reveal reveal-delay-2" style="margin-bottom:36px">
-          Higher engagement means fewer drop-offs, stronger results, and a business that
-          grows on word-of-mouth.
-        </p>
-
-        <div class="portal-features reveal reveal-delay-3" id="clientTabs">
-          <div class="portal-feature portal-feature--light active" data-client-tab="workout">
-            <div class="portal-feature__icon">🏋️</div>
-            <div class="portal-feature__title">Personalised Workouts</div>
-            <div class="portal-feature__desc">Coach-assigned plans with video demos, sets, reps, and guidance.</div>
-          </div>
-          <div class="portal-feature portal-feature--light" data-client-tab="progress">
-            <div class="portal-feature__icon">📈</div>
-            <div class="portal-feature__title">Progress Tracking</div>
-            <div class="portal-feature__desc">Log measurements, photos, and training data. See your transformation.</div>
-          </div>
-          <div class="portal-feature portal-feature--light" data-client-tab="forms">
-            <div class="portal-feature__icon">📝</div>
-            <div class="portal-feature__title">Digital Forms</div>
-            <div class="portal-feature__desc">Complete intake forms, consent waivers, and progress check-ins — all inside the app.</div>
-          </div>
-          <div class="portal-feature portal-feature--light" data-client-tab="bookings">
-            <div class="portal-feature__icon">📅</div>
-            <div class="portal-feature__title">Session Booking</div>
-            <div class="portal-feature__desc">Browse your coach's availability and book in seconds — no WhatsApp needed.</div>
-          </div>
-          <div class="portal-feature portal-feature--light" data-client-tab="messages">
-            <div class="portal-feature__icon">💬</div>
-            <div class="portal-feature__title">Coach Messaging</div>
-            <div class="portal-feature__desc">Direct, structured communication with your coach inside the app.</div>
-          </div>
-          <div class="portal-feature portal-feature--light" data-client-tab="achievements">
-            <div class="portal-feature__icon">🏆</div>
-            <div class="portal-feature__title">Achievements & Streaks</div>
-            <div class="portal-feature__desc">Milestone badges, streaks, and celebration moments that build habits.</div>
-          </div>
-        </div>
-
-        <div style="margin-top:36px" class="reveal reveal-delay-4">
-          <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--primary btn--lg">Create a Free Account Now →</a>
-        </div>
+      <!-- CTA -->
+      <div class="portal-layout__cta reveal reveal-delay-4">
+        <a href="https://fit-africa-web.vercel.app/auth" class="btn btn--primary btn--lg">Create a Free Account Now →</a>
       </div>
 
     </div>

@@ -922,17 +922,29 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .portal-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
+  grid-template-areas:
+    "head   visual"
+    "tabs   visual"
+    "cta    .";
+  column-gap: 64px;
+  row-gap: 24px;
+  align-items: start;
 }
-.portal-layout--reverse { direction: rtl; }
-.portal-layout--reverse > * { direction: ltr; }
+.portal-layout__head   { grid-area: head; }
+.portal-layout__visual { grid-area: visual; align-self: center; }
+.portal-layout__cta    { grid-area: cta; }
+.portal-layout--reverse {
+  grid-template-areas:
+    "visual  head"
+    "visual  tabs"
+    ".       cta";
+}
 
 .portal-features {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-area: tabs;
   gap: 16px;
-  margin-top: 36px;
 }
 .portal-feature {
   background: rgba(255,255,255,0.04);
@@ -1533,9 +1545,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 @media (max-width: 900px) {
-  .portal-layout { grid-template-columns: 1fr; }
-  .portal-layout--reverse { direction: ltr; }
-  .portal-features { grid-template-columns: 1fr 1fr; }
+  .portal-layout { column-gap: 32px; }
+  .portal-features { grid-template-columns: 1fr; gap: 10px; }
+  .portal-feature__desc { display: none; }
   .why-grid { grid-template-columns: 1fr; }
   .benefits-grid { grid-template-columns: 1fr 1fr; }
   .problem-solution { grid-template-columns: 1fr; }
@@ -1555,7 +1567,25 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .footer__top { grid-template-columns: 1fr; gap: 32px; }
   .trust-strip__inner { gap: 0; flex-direction: row; }
   .trust-stat { padding: 0 20px; }
-  .portal-features { grid-template-columns: 1fr; }
+  .portal-layout {
+    grid-template-columns: 46% 1fr;
+    grid-template-areas:
+      "head    head"
+      "tabs    visual"
+      "cta     cta";
+    column-gap: 12px;
+    row-gap: 16px;
+  }
+  .portal-layout--reverse {
+    grid-template-areas:
+      "head    head"
+      "tabs    visual"
+      "cta     cta";
+  }
+  .portal-layout__visual { align-self: start; }
+  .portal-feature { padding: 10px 12px; }
+  .portal-feature__title { font-size: 11px; }
+  .laptop-frame { max-width: 100% !important; }
   .hero__ctas { flex-direction: column; align-items: flex-start; }
 }
 
